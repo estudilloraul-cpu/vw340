@@ -749,6 +749,33 @@ window.APP_DATA={
         "recommendation": "Hoy no compensa usar transporte urbano. Llegad directamente en la camper, instalad el campamento y descansad.",
         "detail": "Dejad preparado el punto de recogida del camping en Bolt para las jornadas de Lisboa.",
         "note": "Sin gasto adicional de transporte urbano."
+      },
+      "dining": {
+        "title": "Comida en ruta y primera noche",
+        "intro": "Jornada larga: priorizad una parada sencilla en carretera y una cena ligera al instalaros.",
+        "restaurant": {
+          "time": "20:30 · Cena tranquila",
+          "name": "Cena en la camper",
+          "type": "Llegada",
+          "price": "Según compra",
+          "why": "La mejor opción tras 547 km es descansar, organizar el camping y no añadir otro desplazamiento.",
+          "dish": "Tabla sencilla, ensalada, fruta y algo preparado.",
+          "image": "images/restaurantes.webp"
+        },
+        "takeaway": {
+          "label": "Para llevar",
+          "name": "Empadas o salgados portugueses",
+          "text": "Compradlos al llegar o al día siguiente para tener un recurso rápido durante las visitas.",
+          "price": "1–3 € unidad",
+          "image": "images/lisboa.webp"
+        },
+        "sweet": {
+          "label": "Primer capricho",
+          "name": "Pastel de nata",
+          "text": "Una primera toma de contacto sin buscar todavía el “mejor”; el de Belém queda reservado para su jornada.",
+          "price": "1–2 €",
+          "image": "images/real-lisboa.jpg"
+        }
       }
     },
     {
@@ -782,6 +809,40 @@ window.APP_DATA={
         "note": "El precio de Bolt cambia según tráfico y demanda. Comprobadlo justo antes de salir.",
         "boltUrl": "https://bolt.eu/en/cities/lisbon/",
         "boltLabel": "Abrir Bolt en Lisboa"
+      },
+      "dining": {
+        "title": "Dónde comer hoy",
+        "intro": "Las recomendaciones siguen vuestro recorrido por Alfama, el castillo y Chiado, sin desvíos largos.",
+        "restaurant": {
+          "time": "14:30 · Comida",
+          "name": "Ourives Petisqueira",
+          "type": "Petiscos portugueses",
+          "price": "≈ 15 € por persona",
+          "why": "Encaja entre Graça, el castillo y Baixa. Buena opción para compartir platos portugueses en familia.",
+          "dish": "Petiscos, bacalhau y platos del día.",
+          "image": "images/alfama.webp",
+          "map": "https://www.google.com/maps/search/?api=1&query=Ourives+Petisqueira+Lisboa"
+        },
+        "alternative": {
+          "name": "Maçã Verde",
+          "text": "Tasca tradicional cerca de Santa Apolónia; útil si termináis Alfama por la parte baja.",
+          "map": "https://www.google.com/maps/search/?api=1&query=Ma%C3%A7%C3%A3+Verde+Lisboa"
+        },
+        "takeaway": {
+          "label": "Cena rápida",
+          "name": "Bifana en O Trevo",
+          "text": "Una opción autóctona, barata y fácil para cenar en Chiado sin perder tiempo.",
+          "price": "≈ 3–7 €",
+          "image": "images/baixa.webp",
+          "map": "https://www.google.com/maps/search/?api=1&query=O+Trevo+Lisboa"
+        },
+        "sweet": {
+          "label": "Parada dulce",
+          "name": "Pastel de nata con café",
+          "text": "Tomadlo a media tarde en Baixa o Chiado. Guardad la experiencia de Pastéis de Belém para mañana.",
+          "price": "≈ 2–4 €",
+          "image": "images/real-lisboa-tram.jpg"
+        }
       }
     },
     {
@@ -814,6 +875,40 @@ window.APP_DATA={
         "note": "Para solo ida y vuelta no compensa el abono de 24 horas.",
         "boltUrl": "https://bolt.eu/en/cities/lisbon/",
         "boltLabel": "Comparar precio en Bolt"
+      },
+      "dining": {
+        "title": "Dónde comer hoy",
+        "intro": "Belém permite combinar una comida local sencilla con la parada dulce más famosa de Lisboa.",
+        "restaurant": {
+          "time": "13:15 · Comida",
+          "name": "O Prado",
+          "type": "Cocina portuguesa",
+          "price": "€ · económico",
+          "why": "Está cerca de Jerónimos y del Palacio de Belém, con raciones generosas y ambiente familiar.",
+          "dish": "Pescado del día, bacalhau o carne a la portuguesa.",
+          "image": "images/belem.webp",
+          "map": "https://www.google.com/maps/search/?api=1&query=O+Prado+Restaurante+Bel%C3%A9m+Lisboa"
+        },
+        "alternative": {
+          "name": "Pão Pão Queijo Queijo",
+          "text": "Bocadillos y platos rápidos si queréis seguir enseguida hacia la Torre y el Padrão.",
+          "map": "https://www.google.com/maps/search/?api=1&query=P%C3%A3o+P%C3%A3o+Queijo+Queijo+Bel%C3%A9m"
+        },
+        "takeaway": {
+          "label": "Para llevar",
+          "name": "Salgados o bocadillo portugués",
+          "text": "Útil para un picnic junto al Tajo si el día va con retraso o preferís comer al aire libre.",
+          "price": "≈ 4–8 €",
+          "image": "images/lisboa.webp"
+        },
+        "sweet": {
+          "label": "Imprescindible",
+          "name": "Pastéis de Belém",
+          "text": "Probad al menos uno caliente con canela y azúcar. Merece la pena comprar alguno extra para llevar.",
+          "price": "≈ 1,50–2 € unidad",
+          "image": "images/real-lisboa.jpg",
+          "map": "https://www.google.com/maps/search/?api=1&query=Past%C3%A9is+de+Bel%C3%A9m"
+        }
       }
     },
     {
@@ -845,6 +940,35 @@ window.APP_DATA={
         "note": "El tráfico y el aparcamiento cerca de los palacios suelen ser complicados.",
         "boltUrl": "https://bolt.eu/en/cities/lisbon/",
         "boltLabel": "Abrir Bolt como alternativa"
+      },
+      "dining": {
+        "title": "Dónde comer hoy",
+        "intro": "Comed en el centro histórico antes de Regaleira y aprovechad la pastelería tradicional de Sintra.",
+        "restaurant": {
+          "time": "13:30 · Comida",
+          "name": "Tascantiga",
+          "type": "Petiscos portugueses",
+          "price": "€€ · para compartir",
+          "why": "Muy bien situada en el casco histórico y adecuada para probar varios platos sin una comida pesada.",
+          "dish": "Petiscos, gambas al ajo y platos de cerdo.",
+          "image": "images/sintra-centro.webp",
+          "map": "https://www.google.com/maps/search/?api=1&query=Tascantiga+Sintra"
+        },
+        "takeaway": {
+          "label": "Opción rápida",
+          "name": "Empada o salgado portugués",
+          "text": "Buena alternativa si queréis dedicar más tiempo a los palacios y comer algo caminando por el centro.",
+          "price": "≈ 2–5 €",
+          "image": "images/sintra.webp"
+        },
+        "sweet": {
+          "label": "Dulce de Sintra",
+          "name": "Travesseiro y queijada",
+          "text": "Compartid un travesseiro de almendra y una queijada. Es la parada gastronómica más propia de Sintra.",
+          "price": "≈ 2–4 €",
+          "image": "images/sintra-dulces.webp",
+          "map": "https://www.google.com/maps/search/?api=1&query=Casa+Piriquita+Sintra"
+        }
       }
     },
     {
@@ -874,6 +998,39 @@ window.APP_DATA={
         "recommendation": "La camper es la opción lógica entre ambos destinos. Aparcad fuera de las murallas de Óbidos y, en Nazaré, dejadla antes de recorrer el Sítio y la playa.",
         "detail": "Dentro de cada localidad, el itinerario está pensado principalmente a pie.",
         "note": "Usad Bolt solo como recurso puntual si termináis lejos de la camper."
+      },
+      "dining": {
+        "title": "Dónde comer hoy",
+        "intro": "Comida tradicional dentro o junto a Óbidos y cena sencilla en Nazaré después del paseo marítimo.",
+        "restaurant": {
+          "time": "13:00 · Comida",
+          "name": "Restaurante Muralhas",
+          "type": "Cocina tradicional",
+          "price": "€€ · precio razonable",
+          "why": "Permite comer antes de salir hacia Nazaré y evita perder tiempo buscando fuera de la ruta.",
+          "dish": "Plato del día, bacalhau o carne regional.",
+          "image": "images/obidos-centro.webp",
+          "map": "https://www.google.com/maps/search/?api=1&query=Restaurante+Muralhas+%C3%93bidos"
+        },
+        "alternative": {
+          "name": "Restaurante Esmeralda · Nazaré",
+          "text": "Para cenar: parrilla portuguesa, platos sencillos y ambiente familiar.",
+          "map": "https://www.google.com/maps/search/?api=1&query=Restaurante+Esmeralda+Nazar%C3%A9"
+        },
+        "takeaway": {
+          "label": "Merienda en Nazaré",
+          "name": "Bola de Berlim en la playa",
+          "text": "Un clásico de las playas portuguesas. Compradla en un puesto con buena rotación y comedla al momento.",
+          "price": "≈ 2–3 €",
+          "image": "images/nazare-playa.webp"
+        },
+        "sweet": {
+          "label": "Solo adultos",
+          "name": "Ginjinha en vaso de chocolate",
+          "text": "En Óbidos, probad una pequeña ginjinha. Para las niñas, el vaso de chocolate sin licor o un dulce local.",
+          "price": "≈ 1,50–3 €",
+          "image": "images/obidos-ginja.webp"
+        }
       }
     },
     {
@@ -901,6 +1058,39 @@ window.APP_DATA={
         "recommendation": "Entrad con la camper hasta vuestra zona de estacionamiento y haced el centro de Aveiro andando. Después desplazaos en camper a las salinas y Costa Nova.",
         "detail": "No merece la pena encadenar Bolt para estas tres paradas si ya viajáis con la camper.",
         "note": "En el centro, comprobad restricciones y altura antes de entrar."
+      },
+      "dining": {
+        "title": "Dónde comer hoy",
+        "intro": "Aveiro combina parrilla portuguesa económica y dulces regionales antes de continuar hacia Costa Nova.",
+        "restaurant": {
+          "time": "13:00 · Comida",
+          "name": "Restaurante Zico",
+          "type": "Parrilla portuguesa",
+          "price": "€ · económico",
+          "why": "Buena relación calidad-precio y platos fáciles para toda la familia antes de las salinas.",
+          "dish": "Pollo a la parrilla, secretos o plato del día.",
+          "image": "images/aveiro-comida.webp",
+          "map": "https://www.google.com/maps/search/?api=1&query=Restaurante+Zico+Aveiro"
+        },
+        "alternative": {
+          "name": "Forno e Grelha · Costa Nova",
+          "text": "Para una cena temprana de pescado o marisco con ambiente familiar y sin excesos turísticos.",
+          "map": "https://www.google.com/maps/search/?api=1&query=Forno+e+Grelha+Costa+Nova"
+        },
+        "takeaway": {
+          "label": "Picoteo local",
+          "name": "Rissol, empada o pastel de bacalhau",
+          "text": "Compradlos en una pastelaria del centro para compartir antes del paseo por los canales.",
+          "price": "≈ 1–3 € unidad",
+          "image": "images/aveiro.webp"
+        },
+        "sweet": {
+          "label": "Dulce de Aveiro",
+          "name": "Ovos moles y tripa de Aveiro",
+          "text": "Probad una caja pequeña de ovos moles. En Costa Nova podéis compartir una tripa dulce, bastante contundente.",
+          "price": "≈ 2–6 €",
+          "image": "images/real-aveiro.jpg"
+        }
       }
     },
     {
@@ -930,6 +1120,39 @@ window.APP_DATA={
         "note": "El precio exacto depende del punto de pernocta y de la demanda.",
         "boltUrl": "https://bolt.eu/en/cities/porto/",
         "boltLabel": "Abrir Bolt en Oporto"
+      },
+      "dining": {
+        "title": "Dónde comer hoy",
+        "intro": "La Ribeira es turística: elegimos cocina regional con buena relación calidad-precio y una opción informal en Gaia.",
+        "restaurant": {
+          "time": "14:00 · Comida",
+          "name": "Adega São Nicolau",
+          "type": "Cocina regional portuguesa",
+          "price": "≈ 14–18 € plato",
+          "why": "Muy bien situada en Ribeira y adecuada para probar platos tradicionales sin alejaros del recorrido.",
+          "dish": "Pulpo, pescado, arroz o bacalhau.",
+          "image": "images/porto-ribeira.webp",
+          "map": "https://www.google.com/maps/search/?api=1&query=Adega+S%C3%A3o+Nicolau+Porto"
+        },
+        "alternative": {
+          "name": "Taberninha do Manel · Gaia",
+          "text": "Buena opción para cenar frente al río, con tapas y platos portugueses en ambiente informal.",
+          "map": "https://www.google.com/maps/search/?api=1&query=Taberninha+do+Manel+Vila+Nova+de+Gaia"
+        },
+        "takeaway": {
+          "label": "Comida rápida local",
+          "name": "Sandes de pernil o bolinho de bacalhau",
+          "text": "Perfecto para picar mientras recorréis Ribeira o cruzáis hacia Gaia.",
+          "price": "≈ 3–7 €",
+          "image": "images/porto-comida.webp"
+        },
+        "sweet": {
+          "label": "Merienda",
+          "name": "Pastel de nata o éclair",
+          "text": "Tomadlo en una confeitaria tradicional antes de subir al puente o durante el paseo por Gaia.",
+          "price": "≈ 2–4 €",
+          "image": "images/real-porto.jpg"
+        }
       }
     },
     {
@@ -964,6 +1187,39 @@ window.APP_DATA={
         "note": "Comprobad el precio antes de solicitar el viaje y reservad la bodega previamente.",
         "boltUrl": "https://bolt.eu/en/cities/porto/",
         "boltLabel": "Abrir Bolt para Graham’s"
+      },
+      "dining": {
+        "title": "Dónde comer hoy",
+        "intro": "El Mercado do Bolhão es ideal para comer sin romper el recorrido y probar distintos productos portugueses.",
+        "restaurant": {
+          "time": "13:00 · Comida",
+          "name": "Bolhão a Gosto",
+          "type": "Comida tradicional portuguesa",
+          "price": "€€ · raciones abundantes",
+          "why": "Junto al mercado, práctico para continuar hacia Lello y Clérigos sin desplazamientos extra.",
+          "dish": "Plato del día, bacalhau o carne guisada.",
+          "image": "images/porto-bolhao.webp",
+          "map": "https://www.google.com/maps/search/?api=1&query=Bolh%C3%A3o+a+Gosto+Porto"
+        },
+        "alternative": {
+          "name": "Taberninha do Manel · cena",
+          "text": "Después de Graham’s, bajad hacia Gaia para una cena portuguesa informal junto al río.",
+          "map": "https://www.google.com/maps/search/?api=1&query=Taberninha+do+Manel+Vila+Nova+de+Gaia"
+        },
+        "takeaway": {
+          "label": "Picoteo del mercado",
+          "name": "Queijo, presunto, aceitunas y empadas",
+          "text": "Comprad pequeñas porciones en Bolhão y compartidlas. Es más divertido y flexible con las niñas.",
+          "price": "≈ 5–12 € para compartir",
+          "image": "images/porto-comida.webp"
+        },
+        "sweet": {
+          "label": "Plato a compartir",
+          "name": "Francesinha",
+          "text": "Es muy contundente: compartid una entre los adultos o pedid una versión sencilla. No hace falta convertirla en comida completa.",
+          "price": "≈ 10–16 €",
+          "image": "images/porto.webp"
+        }
       }
     },
     {
@@ -989,6 +1245,39 @@ window.APP_DATA={
         "recommendation": "Jornada de carretera. Salid con depósito, agua y comida resueltos y reservad Bolt únicamente para una eventual salida nocturna desde el área de pernocta.",
         "detail": "Al llegar, elegid un aparcamiento cómodo y haced el paseo de la catedral a pie.",
         "note": "No añadáis desplazamientos innecesarios después de la etapa larga."
+      },
+      "dining": {
+        "title": "Dónde comer hoy",
+        "intro": "Tras una etapa larga, una cena informal de tapas cerca de la catedral encaja mejor que una comida pesada.",
+        "restaurant": {
+          "time": "20:00 · Cena",
+          "name": "Cervecería Morito",
+          "type": "Tapas castellanas",
+          "price": "€ · económico",
+          "why": "Muy popular, informal y cerca de la catedral. Puede haber cola, así que valorad ir pronto.",
+          "dish": "Morcilla de Burgos, croquetas y raciones.",
+          "image": "images/burgos-centro.webp",
+          "map": "https://www.google.com/maps/search/?api=1&query=Cervecer%C3%ADa+Morito+Burgos"
+        },
+        "alternative": {
+          "name": "La Mejillonera",
+          "text": "Cena rápida de mejillones, patatas bravas y raciones sencillas.",
+          "map": "https://www.google.com/maps/search/?api=1&query=La+Mejillonera+Burgos"
+        },
+        "takeaway": {
+          "label": "Para picar",
+          "name": "Morcilla, tortilla o queso de Burgos",
+          "text": "Elegid una pequeña selección de tapas para compartir sin alargar demasiado la noche.",
+          "price": "≈ 5–12 €",
+          "image": "images/burgos.webp"
+        },
+        "sweet": {
+          "label": "Dulce local",
+          "name": "Yemas de Burgos",
+          "text": "Un pequeño recuerdo dulce para cerrar la etapa, ideal también para llevar al día siguiente.",
+          "price": "≈ 3–8 € caja",
+          "image": "images/real-burgos.jpg"
+        }
       }
     },
     {
@@ -1011,6 +1300,33 @@ window.APP_DATA={
         "recommendation": "Regreso íntegramente en camper, con paradas de descanso cada dos horas aproximadamente.",
         "detail": "No se prevé transporte urbano durante esta jornada.",
         "note": "Revisad combustible, presión y nivel de agua antes de salir."
+      },
+      "dining": {
+        "title": "Comida de regreso",
+        "intro": "Preparad algo sencillo para la ruta y elegid una parada de descanso cómoda, sin convertirla en una visita.",
+        "restaurant": {
+          "time": "13:30 · Comida en ruta",
+          "name": "Área de servicio bien valorada",
+          "type": "Parada práctica",
+          "price": "Según elección",
+          "why": "Priorizad aparcamiento amplio, baños y sombra antes que buscar un restaurante concreto lejos de la autopista.",
+          "dish": "Menú sencillo o picnic preparado.",
+          "image": "images/regreso.webp"
+        },
+        "takeaway": {
+          "label": "Para llevar",
+          "name": "Bocadillos, fruta y agua fría",
+          "text": "Preparadlos antes de salir de Burgos para controlar tiempos y evitar opciones caras de autopista.",
+          "price": "Según compra",
+          "image": "images/restaurantes.webp"
+        },
+        "sweet": {
+          "label": "Último recuerdo",
+          "name": "Dulces comprados durante el viaje",
+          "text": "Guardad algún pastel, ovos moles o yemas para compartir durante la parada.",
+          "price": "—",
+          "image": "images/real-burgos.jpg"
+        }
       }
     }
   ],
