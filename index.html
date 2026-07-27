@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#15271f"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>VW340 · Portugal 2026</title>
+<link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="fatal" hidden><h1>No se ha podido iniciar la app</h1><p>Recarga la página. Si continúa, borra los datos del sitio y vuelve a abrirla.</p></div>
+<div id="app">
+<header class="topbar"><button class="brand" data-go="home" aria-label="Inicio"><span class="vw">VW</span><span><b>340</b><small>Portugal 2026</small></span></button><button class="round" id="searchBtn" aria-label="Buscar">⌕</button></header>
+<main id="view" tabindex="-1"></main>
+<nav class="bottom" aria-label="Navegación principal">
+<button data-go="home"><span>⌂</span>Hoy</button><button data-go="route"><span>↗</span>Ruta</button><button data-go="explore"><span>⌕</span>Explorar</button><button data-go="girls"><span>★</span>Greta & Maria</button><button data-go="more"><span>•••</span>Más</button>
+</nav>
+</div>
+<div id="modal" class="modal" hidden><div class="sheet"><button class="close" data-close aria-label="Cerrar">×</button><div id="modalBody"></div></div></div>
+<div id="toast" class="toast" hidden></div>
+<script src="data.js"></script><script src="app.js"></script>
+</body></html>
