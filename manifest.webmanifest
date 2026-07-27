@@ -1,10 +1,10 @@
 {
-  "name": "Bitácora VW340 · Portugal 2026",
-  "short_name": "Bitácora",
+  "name": "VW340 · Portugal 2026",
+  "short_name": "VW340",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#f7f3ec",
-  "theme_color": "#f7f3ec",
+  "background_color": "#f4f2eb",
+  "theme_color": "#173c30",
   "lang": "es",
   "icons": [
     {
