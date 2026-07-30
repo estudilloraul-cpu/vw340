@@ -724,6 +724,97 @@ window.APP_DATA={
       "official": "https://www.grahams-port.com/visits-tastings",
       "photo": "images/real-porto.jpg",
       "map": "https://www.google.com/maps/search/?api=1&query=41.1387,-8.6255"
+    },
+    {
+      "id": "tobera-cascadas",
+      "city": "Tobera",
+      "name": "Cascadas de Tobera",
+      "tag": "Naturaleza",
+      "summary": "Un paseo corto junto al río Molinar, entre saltos de agua, puentes y ermitas.",
+      "img": "Cascadas de Tobera",
+      "photo": "images/burgos.webp",
+      "duration": "45–60 min",
+      "price": "Gratis",
+      "best": "Tarde",
+      "map": "https://www.google.com/maps/search/?api=1&query=Cascadas+de+Tobera+Burgos",
+      "official": "https://www.lasmerindades.com/es/tobera",
+      "history": "El río Molinar atraviesa el pequeño núcleo de Tobera formando varias cascadas junto al puente medieval y las ermitas.",
+      "time": "Acceso libre; comprobad el caudal y el estado del sendero.",
+      "tips": [
+        "Calzado cómodo: algunos tramos pueden estar húmedos.",
+        "No dejéis objetos visibles en la camper.",
+        "Combinadlo con Frías, situada a pocos minutos."
+      ],
+      "kids": "Encontrad el salto de agua que haga más ruido y grabad diez segundos de sonido.",
+      "food": "Mesón Entre Pozas, junto al recorrido."
+    },
+    {
+      "id": "entre-pozas",
+      "city": "Tobera",
+      "name": "Mesón Entre Pozas",
+      "tag": "Restaurante",
+      "summary": "Comida castellana casera a pocos pasos de las cascadas.",
+      "img": "Mesón Entre Pozas",
+      "photo": "images/burgos-centro.webp",
+      "duration": "1–1,5 h",
+      "price": "€€",
+      "best": "Comida",
+      "map": "https://www.google.com/maps/search/?api=1&query=Meson+Entre+Pozas+Tobera+Burgos",
+      "official": "https://mesonentrepozas.wixsite.com/website",
+      "history": "Una parada práctica para unir el almuerzo con la visita a Tobera sin volver a desplazar la camper.",
+      "time": "Confirmad horario y reservad si llegáis tarde.",
+      "tips": [
+        "Llamad si la llegada prevista supera las 15:00.",
+        "Preguntad por platos del día y postres caseros."
+      ],
+      "kids": "Elegid entre todos el plato más burgalés de la mesa.",
+      "food": "Morcilla, carnes, guisos y postres caseros."
+    },
+    {
+      "id": "frias-casco",
+      "city": "Frías",
+      "name": "Frías medieval",
+      "tag": "Pueblo histórico",
+      "summary": "Castillo, casas colgadas, callejuelas y vistas sobre el valle del Ebro.",
+      "img": "Frías medieval",
+      "photo": "images/real-burgos.jpg",
+      "duration": "2–3 h",
+      "price": "Castillo de pago",
+      "best": "Última hora de la tarde",
+      "map": "https://www.google.com/maps/search/?api=1&query=Frias+Burgos",
+      "official": "https://www.ciudaddefrias.es/",
+      "history": "Frías conserva un extraordinario conjunto medieval dominado por el castillo de los Velasco y las casas construidas sobre la roca.",
+      "time": "Consultad el horario del castillo; el casco puede recorrerse libremente.",
+      "tips": [
+        "Aparcad abajo y subid caminando.",
+        "Las calles tienen pendiente y firme irregular.",
+        "Dejad el puente medieval para la llegada o la mañana siguiente."
+      ],
+      "kids": "Buscad la casa que parezca estar más suspendida sobre la roca.",
+      "food": "Bares y pequeñas terrazas del casco histórico."
+    },
+    {
+      "id": "logrono-laurel",
+      "city": "Logroño",
+      "name": "Calle Laurel y casco histórico",
+      "tag": "Gastronomía",
+      "summary": "La despedida del viaje entre pinchos, calles peatonales y ambiente riojano.",
+      "img": "Calle Laurel y casco histórico",
+      "photo": "images/restaurantes.webp",
+      "duration": "2–3 h",
+      "price": "Según consumo",
+      "best": "Tarde y noche",
+      "map": "https://www.google.com/maps/search/?api=1&query=Calle+Laurel+Logrono",
+      "official": "https://lariojaturismo.com/",
+      "history": "Laurel y San Juan concentran una de las culturas de pinchos más conocidas del norte de España.",
+      "time": "Los bares tienen horarios propios; la actividad aumenta al final de la tarde.",
+      "tips": [
+        "Compartid pinchos para probar más especialidades.",
+        "Alternad Laurel con San Juan para evitar los puntos más concurridos.",
+        "Desde el centro podéis enlazar el Espolón y el Puente de Piedra."
+      ],
+      "kids": "Cada niña elige el pincho con el nombre o aspecto más curioso.",
+      "food": "Champiñones, zapatilla, matrimonio, setas y vino de Rioja."
     }
   ],
   "trip": [
@@ -1225,57 +1316,61 @@ window.APP_DATA={
     {
       "id": "D8",
       "date": "2026-08-18",
-      "city": "Burgos",
-      "title": "Oporto → Burgos",
-      "meta": "Etapa larga · paseo de recuperación",
-      "hero": "porto burgos road trip camper",
+      "city": "Tobera y Frías",
+      "title": "Quinta do Roncão → Tobera → Frías",
+      "meta": "6 h 30 min de carretera · cascadas y tarde medieval",
+      "hero": "Tobera waterfalls Frias Burgos camper",
       "items": [
-        "08:30 · Salida",
-        "13:30 · Comida en ruta",
-        "17:30 · Llegada",
-        "19:00 · Catedral y centro"
+        "08:00 · Salida de Quinta do Roncão",
+        "14:30 aprox. · Llegada a Tobera",
+        "15:00 · Comida en Mesón Entre Pozas",
+        "16:30 · Paseo por las cascadas",
+        "18:00 · Traslado a Frías (5 min)",
+        "18:15 · Castillo, casas colgadas y casco medieval"
       ],
       "places": [
-        "burgos-cat"
+        "tobera-cascadas",
+        "entre-pozas",
+        "frias-casco"
       ],
       "photo": "images/real-burgos.jpg",
       "transport": {
         "mode": "Camper",
-        "title": "Oporto → Burgos",
-        "recommendation": "Jornada de carretera. Salid con depósito, agua y comida resueltos y reservad Bolt únicamente para una eventual salida nocturna desde el área de pernocta.",
-        "detail": "Al llegar, elegid un aparcamiento cómodo y haced el paseo de la catedral a pie.",
-        "note": "No añadáis desplazamientos innecesarios después de la etapa larga."
+        "title": "Quinta do Roncão → Tobera → Frías",
+        "recommendation": "Es la jornada larga del regreso: aproximadamente 6 h 30 min hasta Tobera. Salid temprano, con combustible y comida ligera para una parada breve en ruta.",
+        "detail": "Tras las cascadas, Frías queda a unos 5 minutos en camper. Aparcad en el área y terminad el día caminando.",
+        "note": "Añadid al tiempo de conducción una parada de descanso de 20–30 minutos cada dos horas."
       },
       "dining": {
         "title": "Dónde comer hoy",
-        "intro": "Tras una etapa larga, una cena informal de tapas cerca de la catedral encaja mejor que una comida pesada.",
+        "intro": "La opción más coherente es comer junto a las cascadas y no volver a mover la camper hasta terminar la visita.",
         "restaurant": {
-          "time": "20:00 · Cena",
-          "name": "Cervecería Morito",
-          "type": "Tapas castellanas",
-          "price": "€ · económico",
-          "why": "Muy popular, informal y cerca de la catedral. Puede haber cola, así que valorad ir pronto.",
-          "dish": "Morcilla de Burgos, croquetas y raciones.",
-          "image": "images/burgos-centro.webp",
-          "map": "https://www.google.com/maps/search/?api=1&query=Cervecer%C3%ADa+Morito+Burgos"
+          "time": "15:00 · Comida",
+          "name": "Mesón Entre Pozas",
+          "type": "Cocina castellana junto a las cascadas",
+          "price": "€€ · comida casera",
+          "why": "Está en Tobera y permite unir comida y paseo sin desvíos.",
+          "dish": "Morcilla, carnes, platos caseros y postres.",
+          "image": "images/burgos.webp",
+          "map": "https://www.google.com/maps/search/?api=1&query=Meson+Entre+Pozas+Tobera+Burgos"
         },
         "alternative": {
-          "name": "La Mejillonera",
-          "text": "Cena rápida de mejillones, patatas bravas y raciones sencillas.",
-          "map": "https://www.google.com/maps/search/?api=1&query=La+Mejillonera+Burgos"
+          "name": "Picnic preparado",
+          "text": "Útil si la llegada se retrasa o el restaurante está completo.",
+          "map": "https://www.google.com/maps/search/?api=1&query=Tobera+Burgos"
         },
         "takeaway": {
-          "label": "Para picar",
-          "name": "Morcilla, tortilla o queso de Burgos",
-          "text": "Elegid una pequeña selección de tapas para compartir sin alargar demasiado la noche.",
-          "price": "≈ 5–12 €",
-          "image": "images/burgos.webp"
+          "label": "Para la carretera",
+          "name": "Bocadillos, fruta y agua",
+          "text": "Preparadlo en la quinta para no alargar las paradas de la etapa.",
+          "price": "Según compra",
+          "image": "images/regreso.webp"
         },
         "sweet": {
-          "label": "Dulce local",
-          "name": "Yemas de Burgos",
-          "text": "Un pequeño recuerdo dulce para cerrar la etapa, ideal también para llevar al día siguiente.",
-          "price": "≈ 3–8 € caja",
+          "label": "Merienda",
+          "name": "Helado o dulce en Frías",
+          "text": "Una parada sencilla al terminar el paseo por el casco medieval.",
+          "price": "€",
           "image": "images/real-burgos.jpg"
         }
       }
@@ -1283,49 +1378,112 @@ window.APP_DATA={
     {
       "id": "D9",
       "date": "2026-08-19",
-      "city": "Sabadell",
-      "title": "Burgos → Sabadell",
-      "meta": "Regreso a casa",
-      "hero": "camper road trip spain family",
+      "city": "Burgos y Logroño",
+      "title": "Frías → Burgos → Logroño",
+      "meta": "1 h hasta Burgos · 1 h 30 min hasta Logroño",
+      "hero": "Burgos Logrono road trip camper",
       "items": [
-        "08:30 · Salida",
-        "13:30 · Comida y descanso",
-        "18:30 · Llegada aproximada"
+        "09:00 · Salida de Frías",
+        "10:00 · Llegada a Burgos",
+        "10:15 · Catedral y casco histórico",
+        "13:30 · Comida en Burgos",
+        "15:30 · Salida hacia Logroño",
+        "17:00 · Llegada y pernocta",
+        "19:00 · Paseo y pinchos por Laurel y San Juan"
+      ],
+      "places": [
+        "burgos-cat",
+        "logrono-laurel"
+      ],
+      "photo": "images/real-burgos.jpg",
+      "transport": {
+        "mode": "Camper + a pie",
+        "title": "Frías → Burgos → Logroño",
+        "recommendation": "Frías–Burgos son aproximadamente 1 hora. Después de comer, Burgos–Logroño son unas 1 h 30 min.",
+        "detail": "En ambas ciudades, dejad la camper en el área correspondiente y movedos a pie o en transporte urbano.",
+        "note": "No alarguéis demasiado Burgos para llegar a Logroño con tiempo de instalaros y disfrutar de la tarde."
+      },
+      "dining": {
+        "title": "Comer en Burgos y cenar en Logroño",
+        "intro": "Comida castellana ligera en Burgos y ruta informal de pinchos en Logroño.",
+        "restaurant": {
+          "time": "13:30 · Comida",
+          "name": "Cervecería Morito",
+          "type": "Tapas castellanas",
+          "price": "€ · económico",
+          "why": "Está cerca de la catedral y permite continuar el viaje sin una sobremesa larga.",
+          "dish": "Morcilla de Burgos, croquetas y raciones.",
+          "image": "images/burgos-centro.webp",
+          "map": "https://www.google.com/maps/search/?api=1&query=Cerveceria+Morito+Burgos"
+        },
+        "alternative": {
+          "name": "La Mejillonera",
+          "text": "Opción rápida de raciones sencillas en el centro de Burgos.",
+          "map": "https://www.google.com/maps/search/?api=1&query=La+Mejillonera+Burgos"
+        },
+        "takeaway": {
+          "label": "Cena en Logroño",
+          "name": "Ruta de pinchos por Laurel y San Juan",
+          "text": "Un pincho en varios locales: champiñón, zapatilla, matrimonio o setas.",
+          "price": "≈ 3–5 € por pincho y bebida",
+          "image": "images/restaurantes.webp",
+          "map": "https://www.google.com/maps/search/?api=1&query=Calle+Laurel+Logrono"
+        },
+        "sweet": {
+          "label": "Para las niñas",
+          "name": "Helado en el centro",
+          "text": "Ideal durante el paseo por el Espolón y el casco histórico.",
+          "price": "€",
+          "image": "images/regreso.webp"
+        }
+      }
+    },
+    {
+      "id": "D10",
+      "date": "2026-08-20",
+      "city": "Sabadell",
+      "title": "Logroño → Sabadell",
+      "meta": "4 h–4 h 15 min · regreso a casa",
+      "hero": "camper road trip Spain family return",
+      "items": [
+        "09:00 · Desayuno y salida",
+        "11:00 · Parada breve de descanso",
+        "13:15 · Llegada aproximada a Sabadell"
       ],
       "places": [],
       "photo": "images/regreso.webp",
       "transport": {
         "mode": "Camper",
-        "title": "Burgos → Sabadell",
-        "recommendation": "Regreso íntegramente en camper, con paradas de descanso cada dos horas aproximadamente.",
-        "detail": "No se prevé transporte urbano durante esta jornada.",
-        "note": "Revisad combustible, presión y nivel de agua antes de salir."
+        "title": "Logroño → Sabadell",
+        "recommendation": "Trayecto final de unas 4 h–4 h 15 min, según tráfico y paradas.",
+        "detail": "Planificad una parada breve a mitad de camino y salid con combustible suficiente.",
+        "note": "La entrada al área de Barcelona puede añadir tiempo en función del tráfico."
       },
       "dining": {
         "title": "Comida de regreso",
-        "intro": "Preparad algo sencillo para la ruta y elegid una parada de descanso cómoda, sin convertirla en una visita.",
+        "intro": "El objetivo es llegar a casa a primera hora de la tarde.",
         "restaurant": {
-          "time": "13:30 · Comida en ruta",
-          "name": "Área de servicio bien valorada",
+          "time": "11:00 · Descanso",
+          "name": "Área de servicio en ruta",
           "type": "Parada práctica",
           "price": "Según elección",
-          "why": "Priorizad aparcamiento amplio, baños y sombra antes que buscar un restaurante concreto lejos de la autopista.",
-          "dish": "Menú sencillo o picnic preparado.",
+          "why": "Baños, café y estiramiento breve sin desvíos.",
+          "dish": "Café, fruta o desayuno ligero.",
           "image": "images/regreso.webp"
         },
         "takeaway": {
           "label": "Para llevar",
-          "name": "Bocadillos, fruta y agua fría",
-          "text": "Preparadlos antes de salir de Burgos para controlar tiempos y evitar opciones caras de autopista.",
+          "name": "Agua, fruta y algo ligero",
+          "text": "Preparadlo antes de salir de Logroño.",
           "price": "Según compra",
           "image": "images/restaurantes.webp"
         },
         "sweet": {
           "label": "Último recuerdo",
-          "name": "Dulces comprados durante el viaje",
-          "text": "Guardad algún pastel, ovos moles o yemas para compartir durante la parada.",
+          "name": "Dulces del viaje",
+          "text": "Guardad algo comprado durante la ruta para compartir en la parada.",
           "price": "—",
-          "image": "images/real-burgos.jpg"
+          "image": "images/regreso.webp"
         }
       }
     }
@@ -1386,6 +1544,30 @@ window.APP_DATA={
       "img": "burgos spain",
       "count": 1,
       "photo": "images/real-burgos.jpg"
+    },
+    {
+      "id": "tobera",
+      "name": "Tobera",
+      "subtitle": "Cascadas, piedra y río",
+      "img": "Tobera Burgos",
+      "count": 2,
+      "photo": "images/burgos.webp"
+    },
+    {
+      "id": "frias",
+      "name": "Frías",
+      "subtitle": "Castillo y casas colgadas",
+      "img": "Frias Burgos",
+      "count": 1,
+      "photo": "images/real-burgos.jpg"
+    },
+    {
+      "id": "logrono",
+      "name": "Logroño",
+      "subtitle": "Pinchos y última noche",
+      "img": "Logrono Rioja",
+      "count": 1,
+      "photo": "images/restaurantes.webp"
     }
   ],
   "missions": {
@@ -1406,5 +1588,5 @@ window.APP_DATA={
       "Busca caballo, persona y tren en los azulejos de São Bento."
     ]
   },
-  "updated": "27 de julio de 2026 · edición fotográfica + transporte"
+  "updated": "30 de julio de 2026 · tramo final, pernoctas y navegación diaria"
 };

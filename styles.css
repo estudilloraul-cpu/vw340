@@ -61,3 +61,7 @@ main{width:100%;margin:0 auto;padding:0 16px calc(96px + env(safe-area-inset-bot
 /* Selector premium de fotografía */
 .photo-source-sheet{padding-top:10px}.photo-source-sheet h1{margin-bottom:8px}.photo-source-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}.photo-source-card{min-height:150px;border-radius:22px;background:#f3eadf;border:1px solid rgba(92,65,49,.08);display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;padding:18px;cursor:pointer}.photo-source-card:active{transform:scale(.985)}.photo-source-icon{width:44px;height:44px;border-radius:15px;background:#fff7ef;display:grid;place-items:center;font-size:24px;color:var(--terr);margin-bottom:auto;box-shadow:var(--shadow-soft)}.photo-source-card b{font-size:17px;margin-top:15px}.photo-source-card small{font-size:11px;line-height:1.35;color:var(--muted);margin-top:4px}.photo-picker{width:100%}
 @media(max-width:360px){.photo-source-grid{grid-template-columns:1fr}.photo-source-card{min-height:120px}}
+
+
+/* Navegación entre jornadas */
+.day-nav{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:4px 0 22px}.day-nav:last-child{margin:26px 0 4px}.day-nav-btn{min-height:66px;padding:12px 14px;border:1px solid rgba(92,65,49,.10);border-radius:17px;background:#f3eadf;color:var(--ink);text-align:left}.day-nav-btn.next{text-align:right}.day-nav-btn small{display:block;font-size:8px;letter-spacing:.13em;color:var(--terr);font-weight:850;margin-bottom:5px}.day-nav-btn b{font-size:13px;line-height:1.2}.day-nav-btn:active{transform:scale(.98)}
