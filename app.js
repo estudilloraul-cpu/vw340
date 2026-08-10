@@ -18,31 +18,366 @@ function saveMissionLists(lists){store.set('missionLists',lists)}
 
 
 const OVERNIGHTS={
-D0:{date:'10 agosto',place:'Lisboa',status:'Confirmada por vosotros',recommended:{name:'Camping de Lisboa',type:'Camping ya elegido',text:'Mantenemos vuestra reserva y la usamos como base para las dos primeras noches.',image:'images/lisboa.webp'},alternative:null},
-D1:{date:'11 agosto',place:'Lisboa',status:'Confirmada por vosotros',recommended:{name:'Camping de Lisboa',type:'Camping ya elegido',text:'Segunda noche en la misma base, sin mover la camper.',image:'images/lisboa.webp'},alternative:null},
-D2:{date:'12 agosto',place:'Sintra · Lourel',status:'Recomendación de ruta',recommended:{name:'Zona de autocaravanas de Lourel',type:'Área municipal / aparcamiento autorizado',text:'Después de visitar Belém y LX Factory, salid de Lisboa sobre las 18:00 y dormid a las afueras de Sintra. Evita subir con la camper al centro histórico y permite empezar temprano al día siguiente.',image:'images/sintra-camper.webp',map:'https://www.google.com/maps/search/?api=1&query=Lourel+Sintra+autocaravanas'},alternative:{name:'Camper park del entorno de Sintra',type:'Camper park de pago',text:'Alternativa con más servicios si necesitáis electricidad, agua o una llegada más controlada. Confirmar disponibilidad antes del viaje.',map:'https://www.google.com/maps/search/?api=1&query=camper+park+Sintra'}},
-D3:{date:'13 agosto',place:'Nazaré',status:'Dos opciones',recommended:{name:'Área municipal de autocaravanas de Nazaré',type:'Área municipal',text:'La opción práctica para dormir cerca del destino del día siguiente y evitar volver atrás.',image:'images/nazare-camper.webp',map:'https://www.google.com/maps/search/?api=1&query=area+autocaravanas+municipal+Nazare'},alternative:{name:'Camper park de Nazaré',type:'Camper park de pago',text:'Mejor si preferís servicios completos y una entrada garantizada en temporada alta.',map:'https://www.google.com/maps/search/?api=1&query=camper+park+Nazare'}},
-D4:{date:'14 agosto',place:'Aveiro',status:'Dos opciones',recommended:{name:'Área municipal de autocaravanas de Aveiro',type:'Área municipal',text:'Buena base para llegar al centro y continuar después hacia Costa Nova.',image:'images/aveiro-camper.webp',map:'https://www.google.com/maps/search/?api=1&query=area+autocaravanas+Aveiro'},alternative:{name:'Camper park de Aveiro',type:'Camper park de pago',text:'Alternativa con más comodidad si necesitáis vaciado, agua, electricidad o reserva.',map:'https://www.google.com/maps/search/?api=1&query=camper+park+Aveiro'}},
-D5:{date:'15 agosto',place:'Oporto',status:'Dos opciones',recommended:{name:'Porto Motorhome Park · Perafita',type:'Camper park de pago',text:'La opción más cómoda para dejar la camper quieta y entrar a Oporto en Bolt o transporte público.',image:'images/porto-camper.webp',map:'https://www.google.com/maps/search/?api=1&query=Porto+Motorhome+Park+Perafita'},alternative:{name:'Parque Biológico de Gaia',type:'Área tranquila de autocaravanas',text:'Una alternativa más verde y tranquila, alejada del ruido urbano. Confirmar acceso y plazas antes de ir.',map:'https://www.google.com/maps/search/?api=1&query=Parque+Biologico+de+Gaia+autocaravanas'}},
-D6:{date:'16 agosto',place:'Oporto',status:'Mantener base',recommended:{name:'Misma área de Oporto',type:'No mover la camper',text:'La mejor decisión es conservar la misma base durante las dos jornadas de Oporto.',image:'images/porto-camper.webp'},alternative:null},
-D7:{date:'17 agosto',place:'Valle del Duero',status:'Reserva confirmada',special:true,recommended:{name:'Quinta do Roncão',type:'Pernocta entre viñedos',text:'Reserva confirmada para la noche del 17 de agosto. La quinta está en Vila Seca de Poiares y será la despedida de Portugal.',image:'images/porto-gaia.webp',map:'https://www.google.com/maps/search/?api=1&query=Quinta+do+Roncao+Vila+Seca+de+Poiares',site:'https://www.quintadoroncao.com/en/'},alternative:null},
-D8:{date:'18 agosto',place:'Frías',status:'Pernocta prevista',recommended:{name:'Área de autocaravanas de Frías',type:'Área de etapa',text:'Área en Calle de los Molinos, próxima al casco histórico. Tarifa orientativa de 6 € por 24 horas; comprobad disponibilidad y condiciones antes de llegar.',image:'images/burgos-camper.webp',map:'https://www.google.com/maps/search/?api=1&query=Area+de+autocaravanas+Frias+Calle+de+los+Molinos',site:'https://www.campingcarpark.com/es_ES/estancia-autocaravanas/castilla-leon/burgos/frias'},alternative:{name:'Camping Ciudad de Frías',type:'Alternativa con más servicios',text:'Opción de pago si preferís camping o el área está completa.',map:'https://www.google.com/maps/search/?api=1&query=Camping+Ciudad+de+Frias'}},
-D9:{date:'19 agosto',place:'Logroño',status:'Última noche del viaje',recommended:{name:'Zona municipal de autocaravanas y campers',type:'Área municipal · Calle Río Lomo',text:'Zona municipal de acceso libre con plazas específicas, bien comunicada con el centro y próxima a zonas verdes.',image:'images/regreso.webp',map:'https://www.google.com/maps/search/?api=1&query=Area+autocaravanas+Calle+Rio+Lomo+Logrono',site:'https://logrono.es/-/logrono-cuenta-con-una-nueva-zona-para-autocaravanas-de-acceso-libre-en-la-calle-rio-lomo-que-ofrece-un-servicio-completo-a-los-usuarios'},alternative:{name:'Camper park privado de Logroño',type:'Plan B',text:'Alternativa si queréis reservar plaza o encontrar más servicios.',map:'https://www.google.com/maps/search/?api=1&query=camper+park+Logrono'}},
-D10:{date:'20 agosto',place:'Casa',status:'Fin del viaje',recommended:{name:'Regreso a Sabadell',type:'Sin pernocta',text:'Última etapa del viaje.',image:'images/regreso.webp'},alternative:null}
-};
+  "D0": {
+    "date": "11 agosto",
+    "place": "Lisboa",
+    "status": "Reserva confirmada",
+    "recommended": {
+      "name": "Lisboa Camping",
+      "type": "Camping confirmado",
+      "text": "Primera noche en Lisboa tras la salida desde Chiclana.",
+      "image": "images/lisboa.webp",
+      "map": "https://www.google.com/maps/search/?api=1&query=Lisboa+Camping"
+    },
+    "alternative": null
+  },
+  "D1": {
+    "date": "12 agosto",
+    "place": "Lisboa",
+    "status": "Segunda noche confirmada",
+    "recommended": {
+      "name": "Lisboa Camping",
+      "type": "Misma base",
+      "text": "Día de centro histórico y eclipse. Lo más cómodo es regresar al camping al terminar.",
+      "image": "images/lisboa.webp",
+      "map": "https://www.google.com/maps/search/?api=1&query=Lisboa+Camping"
+    },
+    "alternative": null
+  },
+  "D2": {
+    "date": "13 agosto",
+    "place": "Óbidos",
+    "status": "Noche de transición",
+    "recommended": {
+      "name": "Área / camper park de Óbidos",
+      "type": "Parada práctica tras Lisboa",
+      "text": "Después de Belém y LX Factory, continuad en camper hacia Óbidos y descansad allí para entrar al día siguiente con calma en la villa y seguir luego hacia Nazaré.",
+      "image": "images/obidos.webp",
+      "map": "https://www.google.com/maps/search/?api=1&query=camper+park+Obidos"
+    },
+    "alternative": {
+      "name": "Plan B en la zona de Caldas da Rainha",
+      "type": "Alternativa cercana",
+      "text": "Útil si Óbidos está lleno o preferís más servicios antes de seguir hacia Nazaré.",
+      "map": "https://www.google.com/maps/search/?api=1&query=camper+park+Caldas+da+Rainha"
+    }
+  },
+  "D4": {
+    "date": "14 agosto",
+    "place": "Nazaré",
+    "status": "Dos opciones",
+    "recommended": {
+      "name": "Área municipal de autocaravanas de Nazaré",
+      "type": "Área municipal",
+      "text": "La opción práctica para terminar el día junto al Atlántico.",
+      "image": "images/nazare-camper.webp",
+      "map": "https://www.google.com/maps/search/?api=1&query=area+autocaravanas+municipal+Nazare"
+    },
+    "alternative": {
+      "name": "Camper park de Nazaré",
+      "type": "Camper park de pago",
+      "text": "Más servicios y llegada más controlada en temporada alta.",
+      "map": "https://www.google.com/maps/search/?api=1&query=camper+park+Nazare"
+    }
+  },
+  "D5": {
+    "date": "15 agosto",
+    "place": "Aveiro",
+    "status": "Dos opciones",
+    "recommended": {
+      "name": "Área municipal de autocaravanas de Aveiro",
+      "type": "Área municipal",
+      "text": "Base práctica para Aveiro y Costa Nova.",
+      "image": "images/aveiro-camper.webp",
+      "map": "https://www.google.com/maps/search/?api=1&query=area+autocaravanas+Aveiro"
+    },
+    "alternative": {
+      "name": "Camper park de Aveiro",
+      "type": "Camper park de pago",
+      "text": "Alternativa con más comodidad si necesitáis servicios completos.",
+      "map": "https://www.google.com/maps/search/?api=1&query=camper+park+Aveiro"
+    }
+  },
+  "D6": {
+    "date": "16 agosto",
+    "place": "Oporto",
+    "status": "Base en Oporto",
+    "recommended": {
+      "name": "Porto Motorhome Park · Perafita",
+      "type": "Camper park de pago",
+      "text": "Base cómoda para dejar la camper quieta y entrar en Bolt o transporte a Ribeira y Gaia.",
+      "image": "images/porto-camper.webp",
+      "map": "https://www.google.com/maps/search/?api=1&query=Porto+Motorhome+Park+Perafita"
+    },
+    "alternative": {
+      "name": "Parque Biológico de Gaia",
+      "type": "Alternativa tranquila",
+      "text": "Plan B más verde y algo más retirado del centro.",
+      "map": "https://www.google.com/maps/search/?api=1&query=Parque+Biologico+de+Gaia+autocaravanas"
+    }
+  },
+  "D7": {
+    "date": "17 agosto",
+    "place": "Valle del Duero",
+    "status": "Reserva confirmada",
+    "special": true,
+    "recommended": {
+      "name": "Quinta do Roncão",
+      "type": "Pernocta entre viñedos",
+      "text": "Reserva confirmada para la noche del 17 de agosto.",
+      "image": "images/porto-gaia.webp",
+      "map": "https://www.google.com/maps/search/?api=1&query=Quinta+do+Roncao+Vila+Seca+de+Poiares",
+      "site": "https://www.quintadoroncao.com/en/"
+    },
+    "alternative": null
+  },
+  "D8": {
+    "date": "18 agosto",
+    "place": "Frías",
+    "status": "Pernocta prevista",
+    "recommended": {
+      "name": "Área de autocaravanas de Frías",
+      "type": "Área de etapa",
+      "text": "Noche tras Tobera y la visita a Frías.",
+      "image": "images/burgos-camper.webp",
+      "map": "https://www.google.com/maps/search/?api=1&query=Area+de+autocaravanas+Frias+Calle+de+los+Molinos"
+    },
+    "alternative": {
+      "name": "Camping Ciudad de Frías",
+      "type": "Plan B",
+      "text": "Alternativa con más servicios si el área está completa.",
+      "map": "https://www.google.com/maps/search/?api=1&query=Camping+Ciudad+de+Frias"
+    }
+  },
+  "D9": {
+    "date": "19 agosto",
+    "place": "Logroño",
+    "status": "Última noche del viaje",
+    "recommended": {
+      "name": "Zona municipal de autocaravanas y campers",
+      "type": "Área municipal · Calle Río Lomo",
+      "text": "Última noche antes de volver a Sabadell.",
+      "image": "images/photo-logrono.jpg",
+      "map": "https://www.google.com/maps/search/?api=1&query=Area+autocaravanas+Calle+Rio+Lomo+Logrono"
+    },
+    "alternative": null
+  },
+  "D10": {
+    "date": "20 agosto",
+    "place": "Casa",
+    "status": "Fin del viaje",
+    "recommended": {
+      "name": "Regreso a Sabadell",
+      "type": "Sin pernocta",
+      "text": "Última etapa del viaje.",
+      "image": "images/photo-road.jpg"
+    },
+    "alternative": null
+  }
+}
 
 const DAY_EXTRAS={
-D0:{focus:[{title:'Primera mirada a Lisboa',text:'Al llegar, fijaos en cómo la luz cambia sobre los tejados y el Tajo. Es la mejor bienvenida al viaje.',image:'images/familia-vw340.jpg',tag:'Foto familiar'}],tip:'No intentéis aprovechar demasiado la tarde de llegada: instalad la camper, respirad y reservad energía.',moment:'La primera cena tranquila sabiendo que el viaje ya ha empezado.',mission:'Elegid entre todos una palabra para definir el comienzo del viaje.',photo:'Haced una foto de los cuatro nada más instalaros.'},
-D1:{focus:[{title:'El tranvía rozando los balcones',text:'En Alfama, esperad una curva estrecha: el tranvía parece pasar a centímetros de las fachadas.',image:'images/real-lisboa-tram.jpg',tag:'Mejor foto'},{title:'Azulejos y patios escondidos',text:'Mirad hacia arriba y dentro de los pequeños patios: Lisboa se descubre en puertas, ropa tendida y azulejos.',image:'images/real-lisboa.jpg',tag:'Mira arriba'},{title:'Santa Luzia',text:'No os quedéis solo con la vista. Buscad los paneles de azulejos y las buganvillas del jardín.',image:'images/real-lisboa.jpg',tag:'A 2 minutos'}],tip:'En Alfama, perderse diez minutos suele ser mejor que seguir siempre la ruta más corta.',moment:'Sentaros unos minutos en un mirador y escuchad el sonido del tranvía entre los tejados.',mission:'Encontrad una puerta azul, un gato y un tranvía amarillo.',photo:'Fotografiad el tranvía de lado, justo cuando gira entre las casas.'},
-D2:{focus:[{title:'El rinoceronte de Belém',text:'Buscad la pequeña escultura del rinoceronte en la Torre de Belém, inspirada en el animal llegado de India.',image:'images/real-lisboa.jpg',tag:'Curiosidad histórica'},{title:'La rosa de los vientos',text:'Frente al Padrão, observad el gran mapa del mundo y seguid con el dedo las rutas portuguesas.',image:'images/real-lisboa.jpg',tag:'Para las niñas'},{title:'Ler Devagar',text:'En LX Factory, levantad la vista: una bicicleta parece volar sobre las estanterías.',image:'images/lxfactory.webp',tag:'Tienda original'}],tip:'Belém se disfruta mejor temprano; LX Factory funciona bien al final de la tarde, con menos calor.',moment:'Comer un pastel de Belém todavía caliente, con canela y azúcar.',mission:'¿Quién encuentra primero el rinoceronte?',photo:'Desde el paseo del Tajo, encuadrad la Torre con mucho cielo y agua alrededor.'},
-D3:{focus:[{title:'Una torre al revés',text:'En el Pozo Iniciático, mirad hacia arriba durante la bajada: la perspectiva es todavía más espectacular.',image:'images/real-sintra.jpg',tag:'Foto imprescindible'},{title:'Túneles secretos',text:'Algunos pasadizos de Regaleira terminan junto a lagos, grutas y pequeñas torres.',image:'images/real-sintra.jpg',tag:'Aventura'},{title:'Detalles del Palacio da Pena',text:'Buscad cuerdas, azulejos, animales marinos y almenas de estilos diferentes en la misma fachada.',image:'images/real-sintra.jpg',tag:'Mira de cerca'}],tip:'Sintra se disfruta más con pocas visitas bien elegidas que intentando verlo todo en un solo día.',moment:'La primera vista del Palacio da Pena apareciendo entre los árboles.',mission:'Encontrad un animal fantástico escondido en una fachada.',photo:'En el Pozo Iniciático, fotografiad desde abajo hacia la luz.'},
-D4:{focus:[{title:'La entrada de Óbidos',text:'Al cruzar la Porta da Vila, mirad hacia arriba: el pequeño oratorio está cubierto de azulejos.',image:'images/real-obidos.jpg',tag:'Mira arriba'},{title:'Las calles secundarias',text:'Las fotografías más bonitas suelen estar fuera de la Rua Direita, en callejuelas blancas y tranquilas.',image:'images/real-obidos.jpg',tag:'Mejor foto'},{title:'El océano de Nazaré',text:'Desde Sítio se entiende la altura del acantilado y la fuerza del mar.',image:'images/real-nazare.jpg',tag:'Gran paisaje'}],tip:'En Óbidos, girad por cualquier calle lateral. En Nazaré, subid primero al Sítio y bajad después.',moment:'Mirar el Atlántico desde el mirador de Suberco.',mission:'Encontrad una puerta azul en Óbidos y una barca tradicional en Nazaré.',photo:'Enmarcad una calle blanca de Óbidos con flores en primer plano.'},
-D5:{focus:[{title:'Los dibujos de los moliceiros',text:'Muchos no son simples adornos: mezclan escenas populares, religiosas y humorísticas.',image:'images/real-aveiro.jpg',tag:'Curiosidad'},{title:'Aveiro modernista',text:'Alrededor del canal central, buscad flores, hierro curvado y balcones Art Nouveau.',image:'images/real-aveiro.jpg',tag:'Mira las fachadas'},{title:'Los palheiros',text:'Las casas de rayas de Costa Nova nacieron como almacenes de pescadores.',image:'images/costa-nova.webp',tag:'Historia local'}],tip:'Reservad tiempo para caminar sin rumbo entre las casas de Costa Nova; cada combinación de color es distinta.',moment:'El paseo entre las casas de rayas con la luz suave de la tarde.',mission:'Encontrad una casa con rayas verdes y otra con rayas rojas.',photo:'Esperad a que pase una bicicleta delante de una fachada de rayas.'},
-D6:{focus:[{title:'Las escaleras de Ribeira',text:'Las bajadas entre fachadas y ropa tendida ofrecen perspectivas mucho más bonitas que las calles principales.',image:'images/real-porto.jpg',tag:'Desvío corto'},{title:'Dos niveles del puente',text:'Mirad el Luís I desde abajo y después desde arriba: parece otro puente completamente distinto.',image:'images/real-porto.jpg',tag:'Dos miradas'},{title:'Rótulos antiguos',text:'Entre los comercios modernos sobreviven letreros y fachadas tradicionales.',image:'images/real-porto.jpg',tag:'Mira de cerca'}],tip:'Cruzad el puente andando; si las niñas están cansadas, volved con transporte desde Gaia.',moment:'El atardecer sobre Ribeira visto desde Jardim do Morro.',mission:'Contad cuántos barcos rabelo veis en el Duero.',photo:'Fotografiad Ribeira desde Gaia usando el puente como línea de entrada.'},
-D7:{focus:[{title:'São Bento en detalle',text:'Acercaos a los azulejos: cuentan escenas históricas, batallas y vida rural.',image:'images/porto-saobento.webp',tag:'Historia visual'},{title:'El techo de Lello',text:'Todo el mundo mira la escalera; levantad la vista hacia el techo y las vidrieras.',image:'images/real-porto.jpg',tag:'Mira arriba'},{title:'Las marcas de las barricas',text:'En Graham’s, fijaos en los números y anotaciones de tiza que identifican cosechas y lotes.',image:'images/porto-gaia.webp',tag:'Bodega'}],tip:'No llenéis demasiado la mañana: Bolhão, Lello y Clérigos están cerca, pero las colas cambian el ritmo.',moment:'Al salir de Graham’s, detenerse unos minutos ante la panorámica de Oporto.',mission:'Encontrad el azulejo más pequeño de São Bento y la barrica más grande de Graham’s.',photo:'Desde Gaia, capturad el puente y Ribeira con la luz de última hora.'},
-D8:{focus:[{title:'El Papamoscas',text:'Dentro de la catedral, el curioso autómata abre la boca al marcar las horas.',image:'images/real-burgos.jpg',tag:'Curiosidad'},{title:'La Escalera Dorada',text:'Buscad el equilibrio de su composición y la riqueza del trabajo escultórico.',image:'images/real-burgos.jpg',tag:'Interior imprescindible'},{title:'El Arco de Santa María',text:'Deteneos antes de cruzarlo y observad las figuras históricas de la fachada.',image:'images/real-burgos.jpg',tag:'Mira arriba'}],tip:'Burgos funciona mejor como paseo corto y agradable que como una visita cargada después de la carretera.',moment:'La primera vista de las agujas de la catedral al entrar en el centro.',mission:'Encontrad al Papamoscas antes de que suene la hora.',photo:'Fotografiad la catedral enmarcada por una calle del casco antiguo.'},
-D9:{focus:[{title:'El último kilómetro',text:'Fijaos en el momento exacto en que el paisaje vuelve a sentirse como casa.',image:'images/regreso.webp',tag:'Cierre del viaje'}],tip:'Guardad una última parada breve para ordenar fotos y elegir juntos el mejor recuerdo.',moment:'Llegar a casa, apagar el motor y quedarse unos segundos en silencio.',mission:'Cada uno elige su lugar, comida y momento favoritos.',photo:'Una última foto de la camper al terminar el viaje.'}
-};
+  "D0": {
+    "focus": [
+      {
+        "title": "Primera noche en Lisboa",
+        "text": "Con la furgo por fin en marcha, hoy el objetivo es sencillo: llegar, instalaros y empezar el viaje con buen pie.",
+        "image": "images/familia-vw340.jpg",
+        "tag": "Nuevo comienzo"
+      }
+    ],
+    "tip": "No intentéis recuperar el tiempo perdido en la jornada de llegada.",
+    "moment": "La primera cena sabiendo que el viaje ya ha arrancado.",
+    "mission": "Elegid una palabra para inaugurar esta segunda oportunidad del viaje.",
+    "photo": "Primera foto de la camper instalada en Lisboa Camping."
+  },
+  "D1": {
+    "focus": [
+      {
+        "title": "El tranvía rozando los balcones",
+        "text": "En Alfama, esperad una curva estrecha: el tranvía parece pasar a centímetros de las fachadas.",
+        "image": "images/real-lisboa-tram.jpg",
+        "tag": "Mejor foto"
+      },
+      {
+        "title": "Santa Luzia y los miradores",
+        "text": "No os quedéis solo con la vista: buganvillas, azulejos y tejados son parte del encanto.",
+        "image": "images/real-lisboa.jpg",
+        "tag": "Mira arriba"
+      },
+      {
+        "title": "Eclipse desde el Moinho do Penedo",
+        "text": "Al final del día, buscad horizonte despejado hacia el oeste y usad solo gafas homologadas.",
+        "image": "images/real-lisboa.jpg",
+        "tag": "12 AGOSTO · ECLIPSE"
+      }
+    ],
+    "tip": "Regresad al entorno del camping con margen para no llegar justos al eclipse.",
+    "moment": "19:36 · el máximo del eclipse parcial en Lisboa.",
+    "mission": "Encontrad una puerta azul, un gato, un tranvía amarillo y la sombra más curiosa durante el eclipse.",
+    "photo": "Nunca miréis el Sol sin protección homologada; para fotografiarlo hace falta filtro solar específico."
+  },
+  "D2": {
+    "focus": [
+      {
+        "title": "El rinoceronte de Belém",
+        "text": "Buscad la pequeña escultura del rinoceronte en la Torre de Belém.",
+        "image": "images/real-lisboa.jpg",
+        "tag": "Curiosidad histórica"
+      },
+      {
+        "title": "La rosa de los vientos",
+        "text": "Frente al Padrão, seguid con el dedo las rutas portuguesas en el gran mapa del suelo.",
+        "image": "images/real-lisboa.jpg",
+        "tag": "Para las niñas"
+      },
+      {
+        "title": "Ler Devagar",
+        "text": "En LX Factory, levantad la vista: una bicicleta parece volar sobre las estanterías.",
+        "image": "images/lxfactory.webp",
+        "tag": "Tienda original"
+      }
+    ],
+    "tip": "Aprovechad la tarde para salir ya de Lisboa y acercaros a Óbidos.",
+    "moment": "Pastéis de Belém todavía calientes, con canela y azúcar.",
+    "mission": "¿Quién encuentra primero el rinoceronte y una librería que parezca de película?",
+    "photo": "Desde el paseo del Tajo, encuadrad la Torre con mucho cielo y agua alrededor."
+  },
+  "D4": {
+    "focus": [
+      {
+        "title": "La entrada de Óbidos",
+        "text": "Al cruzar la Porta da Vila, mirad hacia arriba: el pequeño oratorio está cubierto de azulejos.",
+        "image": "images/real-obidos.jpg",
+        "tag": "Mira arriba"
+      },
+      {
+        "title": "El océano de Nazaré",
+        "text": "Desde Sítio se entiende la altura del acantilado y la fuerza del mar.",
+        "image": "images/real-nazare.jpg",
+        "tag": "Gran paisaje"
+      }
+    ],
+    "tip": "En Óbidos, apartaos de la calle principal; en Nazaré, subid primero al Sítio y bajad después.",
+    "moment": "Mirar el Atlántico desde el mirador de Suberco.",
+    "mission": "Encontrad una puerta azul en Óbidos y una barca tradicional en Nazaré.",
+    "photo": "Enmarcad una calle blanca de Óbidos con flores en primer plano."
+  },
+  "D5": {
+    "focus": [
+      {
+        "title": "Los dibujos de los moliceiros",
+        "text": "Muchos mezclan escenas populares, religiosas y humorísticas.",
+        "image": "images/real-aveiro.jpg",
+        "tag": "Curiosidad"
+      },
+      {
+        "title": "Los palheiros",
+        "text": "Las casas de rayas de Costa Nova nacieron como almacenes de pescadores.",
+        "image": "images/costa-nova.webp",
+        "tag": "Historia local"
+      }
+    ],
+    "tip": "Reservad tiempo para pasear sin rumbo por Costa Nova.",
+    "moment": "La luz suave sobre las fachadas de rayas.",
+    "mission": "Encontrad una casa con rayas verdes y otra con rayas rojas.",
+    "photo": "Esperad a que pase una bicicleta delante de una fachada de rayas."
+  },
+  "D6": {
+    "focus": [
+      {
+        "title": "Las escaleras de Ribeira",
+        "text": "Hay rincones y pasajes que parecen un decorado. Mirad abajo, arriba y al otro lado del río.",
+        "image": "images/real-porto.jpg",
+        "tag": "Rincón fotogénico"
+      },
+      {
+        "title": "El puente desde Gaia",
+        "text": "La vista del puente Dom Luís I desde la orilla de Gaia es de las más memorables del viaje.",
+        "image": "images/porto-gaia.webp",
+        "tag": "Atardecer"
+      }
+    ],
+    "tip": "No intentéis verlo todo: Ribeira y Gaia ya llenan una gran jornada.",
+    "moment": "Cruzar el puente con el río y las fachadas al fondo.",
+    "mission": "Encontrad un barco rabelo y vuestro mirador favorito del Duero.",
+    "photo": "Probablemente la mejor foto salga desde Gaia mirando a Oporto."
+  },
+  "D7": {
+    "focus": [
+      {
+        "title": "La terraza de Graham’s",
+        "text": "Antes o después de la visita, disfrutad las vistas sobre Oporto desde Gaia.",
+        "image": "images/porto-gaia.webp",
+        "tag": "Bodega"
+      },
+      {
+        "title": "Camino al Douro",
+        "text": "El trayecto hacia Quinta do Roncão ya forma parte del plan: menos ciudad y más paisaje.",
+        "image": "images/photo-road.jpg",
+        "tag": "Carretera"
+      }
+    ],
+    "tip": "No alarguéis demasiado la comida para llegar a la quinta con luz agradable.",
+    "moment": "La tarde tranquila entre viñedos cerrando Portugal.",
+    "mission": "Elegid el mejor rincón de la quinta para la foto familiar del viaje.",
+    "photo": "La hora dorada entre viñedos será difícil de superar."
+  },
+  "D8": {
+    "focus": [
+      {
+        "title": "Las cascadas de Tobera",
+        "text": "No son enormes, pero el conjunto de agua, piedra y puentes tiene mucho encanto.",
+        "image": "images/photo-tobera.jpg",
+        "tag": "Naturaleza"
+      },
+      {
+        "title": "Frías desde fuera",
+        "text": "Antes de entrar, buscad la silueta del pueblo y su castillo sobre la roca.",
+        "image": "images/photo-frias.jpg",
+        "tag": "Postal medieval"
+      }
+    ],
+    "tip": "Es una jornada larga: salid pronto y simplificad las paradas.",
+    "moment": "El contraste entre las cascadas y la silueta medieval de Frías.",
+    "mission": "Buscad el mejor ángulo de las cascadas y contad los puentes del entorno.",
+    "photo": "Una foto general desde el exterior de Frías vale mucho la pena antes de subir."
+  },
+  "D9": {
+    "focus": [
+      {
+        "title": "La catedral de Burgos",
+        "text": "Aunque la parada sea breve, acercaos lo suficiente para apreciar su fachada.",
+        "image": "images/real-burgos.jpg",
+        "tag": "Patrimonio"
+      },
+      {
+        "title": "Laurel al atardecer",
+        "text": "La tarde en Logroño pide pinchos, paseo y despedida tranquila del viaje.",
+        "image": "images/photo-logrono.jpg",
+        "tag": "Última noche"
+      }
+    ],
+    "tip": "No exprimáis demasiado Burgos para llegar a Logroño con margen.",
+    "moment": "El primer pincho de la última noche del viaje.",
+    "mission": "Cada uno elige su pincho favorito y luego hacéis ranking familiar.",
+    "photo": "Una imagen de la calle Laurel o del paseo nocturno será un gran cierre."
+  },
+  "D10": {
+    "focus": [
+      {
+        "title": "Vuelta a casa",
+        "text": "La etapa final también forma parte del recuerdo. Mejor ir sin prisas.",
+        "image": "images/photo-road.jpg",
+        "tag": "Último tramo"
+      }
+    ],
+    "tip": "Parada breve, café, estirar y seguir.",
+    "moment": "Llegar a Sabadell con la sensación de viaje redondo pese a los cambios.",
+    "mission": "Pensad cada uno en vuestro recuerdo favorito antes de llegar.",
+    "photo": "La última foto puede ser simplemente la llegada a casa."
+  }
+}
 
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const fmtDate=s=>new Intl.DateTimeFormat('es-ES',{weekday:'short',day:'numeric',month:'short'}).format(new Date(s+'T12:00:00'));
@@ -64,16 +399,16 @@ function home(){
  const done=store.get('doneDays',[]),today=D.trip[1]||D.trip[0],next=D.trip[3]||D.trip[1];
  return hero(today.photo,`Día 2 · ${fmtDate(today.date)}`,today.city,'Descubre el encanto de la capital portuguesa.',`<button class="btn secondary" data-day="${today.id}">Ver plan del día ›</button>`)+
  (showBeforeLeaving()?beforeLeavingSection():'')+
- `<section class="section"><div class="section-head"><div><h2>Resumen del viaje</h2></div></div><div class="travel-stats"><div class="travel-stat"><i><svg viewBox='0 0 24 24'><path d='M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z'/><circle cx='12' cy='10' r='2.2'/></svg></i><b>2.640 km</b><span>Recorrido</span></div><div class="travel-stat"><i><svg viewBox='0 0 24 24'><rect x='4' y='5.5' width='16' height='14' rx='2'/><path d='M8 3v5M16 3v5M4 10h16'/></svg></i><b>11 días</b><span>10–20 agosto</span></div><div class="travel-stat"><i><svg viewBox='0 0 24 24'><path d='M4 20V9l5 3V5l6 4v11M15 12l5-3v11M7 16h1M11 15h1M17 15h1'/></svg></i><b>8 ciudades</b><span>Por descubrir</span></div><div class="travel-stat"><i><svg viewBox='0 0 24 24'><circle cx='12' cy='12' r='9'/><path d='m12 7 1.5 3 3.5.5-2.5 2.5.6 3.5-3.1-1.7-3.1 1.7.6-3.5L7 10.5l3.5-.5z'/></svg></i><b>${Object.values(missionLists()).reduce((n,a)=>n+a.length,0)} misiones</b><span>Greta, Maria y Soraya</span></div></div></section>
+ `<section class="section"><div class="section-head"><div><h2>Resumen del viaje</h2></div></div><div class="travel-stats"><div class="travel-stat"><i><svg viewBox='0 0 24 24'><path d='M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z'/><circle cx='12' cy='10' r='2.2'/></svg></i><b>2.640 km</b><span>Recorrido</span></div><div class="travel-stat"><i><svg viewBox='0 0 24 24'><rect x='4' y='5.5' width='16' height='14' rx='2'/><path d='M8 3v5M16 3v5M4 10h16'/></svg></i><b>10 días</b><span>11–20 agosto</span></div><div class="travel-stat"><i><svg viewBox='0 0 24 24'><path d='M4 20V9l5 3V5l6 4v11M15 12l5-3v11M7 16h1M11 15h1M17 15h1'/></svg></i><b>8 ciudades</b><span>Por descubrir</span></div><div class="travel-stat"><i><svg viewBox='0 0 24 24'><circle cx='12' cy='12' r='9'/><path d='m12 7 1.5 3 3.5.5-2.5 2.5.6 3.5-3.1-1.7-3.1 1.7.6-3.5L7 10.5l3.5-.5z'/></svg></i><b>${Object.values(missionLists()).reduce((n,a)=>n+a.length,0)} misiones</b><span>Greta, Maria y Soraya</span></div></div></section>
  <section class="section"><div class="section-head"><div><h2>Próxima parada</h2></div></div><article class="next-card"><img src="${next.photo}" alt="${esc(next.city)}"><button data-day="${next.id}"><small>Mañana · ${fmtDate(next.date)}</small><h3>${esc(next.city)}</h3><p>${esc(next.title)}</p><span class="arrow">›</span></button></article></section>
  <section class="section"><div class="section-head"><div><h2>Tu viaje</h2><p>${done.length} de ${D.trip.length} jornadas completadas</p></div><button class="linkbtn" data-go="route">Ver ruta</button></div><div class="timeline">${D.trip.slice(0,3).map(dayRow).join('')}</div></section>
  <section class="section"><div class="section-head"><div><h2>Imprescindibles</h2><p>Historia, consejos, horarios y mapa.</p></div><button class="linkbtn" data-go="explore">Explorar</button></div><div class="grid">${['feira','pena','obidos-vila','nazare-sitio'].map(id=>placeCard(D.places.find(p=>p.id===id))).join('')}</div></section>`
 }
-function routePage(){return hero('images/familia-vw340.jpg','10–20 agosto','Portugal en familia','Una ruta en camper entre ciudades históricas, costa atlántica y recuerdos.',`<a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Chiclana+de+la+Frontera/Lisboa/Sintra/%C3%93bidos/Nazar%C3%A9/Aveiro/Porto/Tobera/Frias/Burgos/Logrono/Sabadell">Abrir ruta en Maps ›</a>`)+`<section class="section"><div class="section-head"><div><h2>Plan diario</h2><p>Pulsa cada jornada para abrir la agenda completa.</p></div></div><div class="timeline route-line">${D.trip.map(dayRow).join('')}</div></section><section class="section"><div class="section-head"><div><h2>Destinos</h2><p>Explora cada ciudad a través de sus lugares.</p></div></div><div class="city-grid">${D.cities.map(c=>`<article class="city-cover"><img src="${c.photo}" alt="${esc(c.name)}"><button data-city="${esc(c.name)}"><small>${c.count} lugares</small><h3>${esc(c.name)}</h3><p>${esc(c.subtitle)}</p></button></article>`).join('')}</div></section>`}
+function routePage(){return hero('images/familia-vw340.jpg','11–20 agosto','Portugal en familia','Una ruta en camper entre ciudades históricas, costa atlántica y recuerdos.',`<a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/Chiclana+de+la+Frontera/Lisboa/%C3%93bidos/Nazar%C3%A9/Aveiro/Porto/Tobera/Frias/Burgos/Logrono/Sabadell">Abrir ruta en Maps ›</a>`)+`<section class="section"><div class="section-head"><div><h2>Plan diario</h2><p>Pulsa cada jornada para abrir la agenda completa.</p></div></div><div class="timeline route-line">${D.trip.map(dayRow).join('')}</div></section><section class="section"><div class="section-head"><div><h2>Destinos</h2><p>Explora cada ciudad a través de sus lugares.</p></div></div><div class="city-grid">${D.cities.map(c=>`<article class="city-cover"><img src="${c.photo}" alt="${esc(c.name)}"><button data-city="${esc(c.name)}"><small>${c.count} lugares</small><h3>${esc(c.name)}</h3><p>${esc(c.subtitle)}</p></button></article>`).join('')}</div></section>`}
 function explore(){const cities=['Todos',...new Set(D.places.map(p=>p.city))],q=store.get('search','');const ps=D.places.filter(p=>(cityFilter==='Todos'||p.city===cityFilter)&&(`${p.name} ${p.city} ${p.tag} ${p.summary}`.toLowerCase().includes(q.toLowerCase())));return `<section class="section"><div class="section-head"><div><h1 class="page-title">Explorar</h1><p>${D.places.length} lugares con información detallada.</p></div></div><div class="searchbox"><input id="searchInput" value="${esc(q)}" placeholder="Buscar lugar, barrio, mercado…" aria-label="Buscar"></div><div class="filters">${cities.map(c=>`<button data-filter="${esc(c)}" class="${cityFilter===c?'active':''}">${esc(c)}</button>`).join('')}</div><div class="grid" id="placeGrid">${ps.length?ps.map(placeCard).join(''):'<div class="empty">No hay resultados.</div>'}</div></section>`}
-function girls(){const checks=store.get('missions',{}),lists=missionLists();const person=n=>{const arr=lists[n]||[],completed=arr.filter(m=>checks[m.id]).length,pct=arr.length?Math.round(completed/arr.length*100):0,initial=n[0];return `<section class="panel mission-person"><div class="passport-head"><div class="avatar">${initial}</div><div><h2>${n}</h2><p>${completed} de ${arr.length} misiones</p></div><b style="margin-left:auto">${pct}%</b></div><div class="progress"><span style="width:${pct}%"></span></div><div class="mission-list">${arr.map(m=>`<article class="mission-item">${m.photo?`<img class="mission-photo" src="${m.photo}" alt="Foto de la misión">`:''}<label class="mission"><input type="checkbox" data-mission="${m.id}" ${checks[m.id]?'checked':''}><span>${esc(m.text)}</span></label><div class="mission-actions"><button class="mini-action" data-edit-mission="${m.id}" data-person="${n}">Editar</button><button class="mini-action" data-photo-mission="${m.id}" data-person="${n}">${m.photo?'Cambiar foto':'Añadir foto'}</button><button class="mini-action danger" data-delete-mission="${m.id}" data-person="${n}">Eliminar</button></div></article>`).join('')||'<p class="empty">Todavía no hay misiones.</p>'}</div><button class="btn ghost add-mission" data-add-mission="${n}">+ Añadir misión</button></section>`};return hero('images/sintra.webp','Retos para toda la familia','Misiones','Cada destino puede convertirse en un pequeño reto y en un recuerdo con foto.',`<button class="btn secondary" data-go="explore">Descubrir lugares ›</button>`)+person('Greta')+person('Maria')+person('Soraya')}
+function girls(){const checks=store.get('missions',{}),lists=missionLists();const person=n=>{const arr=lists[n]||[],completed=arr.filter(m=>checks[m.id]).length,pct=arr.length?Math.round(completed/arr.length*100):0,initial=n[0];return `<section class="panel mission-person"><div class="passport-head"><div class="avatar">${initial}</div><div><h2>${n}</h2><p>${completed} de ${arr.length} misiones</p></div><b style="margin-left:auto">${pct}%</b></div><div class="progress"><span style="width:${pct}%"></span></div><div class="mission-list">${arr.map(m=>`<article class="mission-item">${m.photo?`<img class="mission-photo" src="${m.photo}" alt="Foto de la misión">`:''}<label class="mission"><input type="checkbox" data-mission="${m.id}" ${checks[m.id]?'checked':''}><span>${esc(m.text)}</span></label><div class="mission-actions"><button class="mini-action" data-edit-mission="${m.id}" data-person="${n}">Editar</button><button class="mini-action" data-photo-mission="${m.id}" data-person="${n}">${m.photo?'Cambiar foto':'Añadir foto'}</button><button class="mini-action danger" data-delete-mission="${m.id}" data-person="${n}">Eliminar</button></div></article>`).join('')||'<p class="empty">Todavía no hay misiones.</p>'}</div><button class="btn ghost add-mission" data-add-mission="${n}">+ Añadir misión</button></section>`};return hero('images/real-lisboa.jpg','Retos para toda la familia','Misiones','Cada destino puede convertirse en un pequeño reto y en un recuerdo con foto.',`<button class="btn secondary" data-go="explore">Descubrir lugares ›</button>`)+person('Greta')+person('Maria')+person('Soraya')}
 function journalPage(){const journal=store.get('journal',{});return hero('images/porto.webp','Diario familiar','Nuestra bitácora','Guarda lo que no quieres olvidar: momentos, sensaciones, fotografías y pequeñas historias.',`<button class="btn secondary" data-tool="journal">Escribir hoy ›</button>`)+`<section class="section"><div class="section-head"><div><h2>Recuerdos del viaje</h2><p>Pulsa un día para escribir, añadir una foto o editar.</p></div></div><div class="journal-grid">${D.trip.map(d=>{const j=journal[d.id],img=j?.photo||d.photo;return `<article class="journal-card"><img src="${img}" alt=""><button data-journal-day="${d.id}"><small>${fmtDate(d.date)} · ${esc(d.city)}</small><h3>${esc(d.title)}</h3>${j?`<span class="stars">${'★'.repeat(Number(j.rating||0))}${j.photo?' · Foto añadida':''}</span>`:'<span class="stars">Añadir recuerdo</span>'}</button></article>`}).join('')}</div></section>`}
-function more(){return `<section class="section"><div class="section-head"><div><h1 class="page-title">Más</h1><p>Herramientas para organizar y conservar el viaje.</p></div></div><div class="grid"><article class="card"><button class="cover" data-go="explore"><img src="images/lisboa.webp" alt=""><div class="card-body"><h3>Guía completa</h3><p>Los 28 lugares del viaje.</p></div></button></article><article class="card"><button class="cover" data-tool="portugalPrep"><img src="images/real-lisboa.jpg" alt=""><div class="card-body"><h3>Antes de salir</h3><p>Peajes, combustible, camper y reservas.</p></div></button></article><article class="card"><button class="cover" data-tool="overnights"><img src="images/porto-camper.webp" alt=""><div class="card-body"><h3>Pernoctas</h3><p>Opciones organizadas por día.</p></div></button></article><article class="card"><button class="cover" data-tool="expenses"><img src="images/restaurantes.webp" alt=""><div class="card-body"><h3>Gastos</h3><p>Control por categorías.</p></div></button></article><article class="card"><button class="cover" data-tool="checklist"><img src="images/nazare-camper.webp" alt=""><div class="card-body"><h3>Checklist camper</h3><p>Todo listo antes de salir.</p></div></button></article><article class="card"><button class="cover" data-tool="backup"><img src="images/regreso.webp" alt=""><div class="card-body"><h3>Copia de seguridad</h3><p>Exporta o restaura tus datos.</p></div></button></article></div></section><section class="panel"><h3>Instalar en el iPhone</h3><p>En Safari pulsa Compartir y después <b>Añadir a pantalla de inicio</b>. La guía y las imágenes principales quedan disponibles sin conexión después de la primera carga.</p></section><section class="panel"><h3>Privacidad</h3><p>La bitácora, las fotografías, las misiones y los gastos se guardan únicamente en este dispositivo.</p></section>`}
+function more(){return `<section class="section"><div class="section-head"><div><h1 class="page-title">Más</h1><p>Herramientas para organizar y conservar el viaje.</p></div></div><div class="grid"><article class="card"><button class="cover" data-go="explore"><img src="images/lisboa.webp" alt=""><div class="card-body"><h3>Guía completa</h3><p>Los 23 lugares del viaje.</p></div></button></article><article class="card"><button class="cover" data-tool="portugalPrep"><img src="images/real-lisboa.jpg" alt=""><div class="card-body"><h3>Antes de salir</h3><p>Peajes, combustible, camper y reservas.</p></div></button></article><article class="card"><button class="cover" data-tool="overnights"><img src="images/porto-camper.webp" alt=""><div class="card-body"><h3>Pernoctas</h3><p>Opciones organizadas por día.</p></div></button></article><article class="card"><button class="cover" data-tool="expenses"><img src="images/restaurantes.webp" alt=""><div class="card-body"><h3>Gastos</h3><p>Control por categorías.</p></div></button></article><article class="card"><button class="cover" data-tool="checklist"><img src="images/nazare-camper.webp" alt=""><div class="card-body"><h3>Checklist camper</h3><p>Todo listo antes de salir.</p></div></button></article><article class="card"><button class="cover" data-tool="backup"><img src="images/regreso.webp" alt=""><div class="card-body"><h3>Copia de seguridad</h3><p>Exporta o restaura tus datos.</p></div></button></article></div></section><section class="panel"><h3>Instalar en el iPhone</h3><p>En Safari pulsa Compartir y después <b>Añadir a pantalla de inicio</b>. La guía y las imágenes principales quedan disponibles sin conexión después de la primera carga.</p></section><section class="panel"><h3>Privacidad</h3><p>La bitácora, las fotografías, las misiones y los gastos se guardan únicamente en este dispositivo.</p></section>`}
 function render(){document.body.classList.toggle('cover-mode',route==='cover');navActive();if(route==='cover')view.innerHTML=cover();else if(route==='home')view.innerHTML=home();else if(route==='route')view.innerHTML=routePage();else if(route==='explore')view.innerHTML=explore();else if(route==='girls')view.innerHTML=girls();else if(route==='journal')view.innerHTML=journalPage();else view.innerHTML=more();view.focus({preventScroll:true})}
 function openModal(html){modalBody.innerHTML=html;modal.hidden=false;document.body.style.overflow='hidden'}
 function closeModal(){modal.hidden=true;document.body.style.overflow='';modalBody.innerHTML=''}
@@ -129,7 +464,7 @@ function chooseMissionPhoto(person,id){openPhotoPicker(async photo=>{const lists
 function expenses(){const a=store.get('expenses',[]),total=a.reduce((s,x)=>s+Number(x.amount),0);openModal(`<div class="detail-content"><h1>Gastos</h1><div class="stat"><b>${total.toLocaleString('es-ES',{style:'currency',currency:'EUR'})}</b><span>total registrado</span></div><div class="panel"><label>Concepto</label><input id="exName" placeholder="Camping, gasolina, comida…"><label>Categoría</label><select id="exCat"><option>Transporte</option><option>Alojamiento</option><option>Comida</option><option>Entradas</option><option>Otros</option></select><label>Importe (€)</label><input id="exAmount" type="number" step="0.01"><div class="actions"><button class="btn" data-add-expense>Añadir</button></div></div><div>${a.map((x,i)=>`<div class="expense"><span><b>${esc(x.name)}</b><small> · ${esc(x.cat)}</small></span><b>${Number(x.amount).toLocaleString('es-ES',{style:'currency',currency:'EUR'})}</b><button class="linkbtn danger" data-del-expense="${i}">Eliminar</button></div>`).join('')||'<p class="empty">Todavía no hay gastos.</p>'}</div></div>`)}
 const checklistDefault=['DNI y tarjetas sanitarias','Documentación y seguro de la camper','Permiso de circulación e ITV','Cargadores y baterías externas','Botiquín y medicación','Calzos, cable eléctrico y adaptadores','Agua, gas y nivel de combustible','Ropa de baño y calzado cómodo','Entradas reservadas','Descargar mapas sin conexión'];
 function checklist(){const c=store.get('checklist',{});openModal(`<div class="detail-content"><h1>Checklist camper</h1><div class="panel">${checklistDefault.map((x,i)=>`<label class="mission"><input type="checkbox" data-check="${i}" ${c[i]?'checked':''}><span>${esc(x)}</span></label>`).join('')}</div></div>`)}
-function portugalPrep(){const prep=store.get('prep',{});const item=(id,title,text)=>`<label class="prep-check"><input type="checkbox" data-prep="${id}" ${prep[id]?'checked':''}><span><b>${title}</b><small>${text}</small></span></label>`;openModal(`<div class="detail-content prep-detail"><div class="prep-hero"><small>VW340 · GUÍA PRÁCTICA</small><h1>Antes de entrar en Portugal</h1><p>Una revisión rápida para salir tranquilos y evitar improvisaciones.</p></div><section class="prep-block"><span class="prep-number">01</span><div><h3>Combustible</h3><p><b>Sal con el depósito lleno desde España.</b> No fijamos una diferencia de precio porque cambia cada semana; revisa GasAll o Google Maps 24–48 horas antes. Así evitas repostar nada más cruzar y eliges con calma.</p></div></section><section class="prep-block"><span class="prep-number">02</span><div><h3>Peajes portugueses</h3><p>Portugal combina cabinas tradicionales y autopistas de cobro exclusivamente electrónico. La opción más cómoda para no pensar en cada tramo es contratar <b>Via Verde Visitors</b> antes de salir. Si no la usáis, pagad con tarjeta en las cabinas normales y registrad la matrícula para los tramos electrónicos.</p><div class="prep-links"><a class="mini-link" target="_blank" rel="noopener" href="https://visitors.viaverde.pt/">Via Verde Visitors ›</a><a class="mini-link" target="_blank" rel="noopener" href="https://www.portugaltolls.com/">Portugal Tolls ›</a></div><div class="prep-alert"><b>Importante:</b> no entres por un carril Via Verde sin dispositivo o registro asociado.</div></div></section><section class="prep-block"><span class="prep-number">03</span><div><h3>Móvil y pagos</h3><p>En Portugal podéis usar llamadas, SMS y datos con las condiciones de vuestra tarifa española, sujeto al uso razonable. La tarjeta funciona en casi todas partes, pero conviene llevar <b>30–50 € en efectivo</b> para mercados, áreas camper o pequeños comercios.</p></div></section><section class="prep-block"><span class="prep-number">04</span><div><h3>Camper</h3><p>Para pernoctar, priorizad áreas autorizadas y comprobad siempre la señalización municipal. Fuera de espacios protegidos y salvo normas locales, la referencia general es un máximo de 48 horas en el mismo municipio. No despleguéis toldo, mesas o calzos fuera de zonas habilitadas.</p></div></section><section class="prep-block reservations"><span class="prep-number">05</span><div><h3>Reservas antes de salir</h3><p>Marca cada punto cuando esté resuelto. Los horarios y la disponibilidad pueden cambiar.</p>${item('pena','Palácio da Pena','Comprar entrada con franja horaria y revisar el acceso desde Sintra.')}${item('regaleira','Quinta da Regaleira','Reservar entrada para evitar colas en agosto.')}${item('lello','Livraria Lello','Comprar ticket con hora antes de llegar a Oporto.')}${item('grahams','Graham’s 1890 Lodge','Confirmar visita familiar y horario de la cata.')}${item('maps','Mapas sin conexión','Descargar Lisboa, Sintra, Aveiro, Oporto y Burgos.')}${item('documents','Documentación','DNI de los cuatro, tarjetas sanitarias y papeles de la camper.')}</div></section><section class="prep-block"><span class="prep-number">06</span><div><h3>Apps útiles</h3><div class="app-chips"><span>Bolt</span><span>Park4Night</span><span>Google Maps</span><span>Via Verde</span><span>Windy</span><span>GasAll</span></div></div></section><p class="prep-foot">Revisado para el viaje de agosto de 2026. Confirma peajes, reservas y normativa local en las webs oficiales antes de salir.</p></div>`)}
+function portugalPrep(){const prep=store.get('prep',{});const item=(id,title,text)=>`<label class="prep-check"><input type="checkbox" data-prep="${id}" ${prep[id]?'checked':''}><span><b>${title}</b><small>${text}</small></span></label>`;openModal(`<div class="detail-content prep-detail"><div class="prep-hero"><small>VW340 · GUÍA PRÁCTICA</small><h1>Antes de entrar en Portugal</h1><p>Una revisión rápida para salir tranquilos y evitar improvisaciones.</p></div><section class="prep-block"><span class="prep-number">01</span><div><h3>Combustible</h3><p><b>Sal con el depósito lleno desde España.</b> No fijamos una diferencia de precio porque cambia cada semana; revisa GasAll o Google Maps 24–48 horas antes. Así evitas repostar nada más cruzar y eliges con calma.</p></div></section><section class="prep-block"><span class="prep-number">02</span><div><h3>Peajes portugueses</h3><p>Portugal combina cabinas tradicionales y autopistas de cobro exclusivamente electrónico. La opción más cómoda para no pensar en cada tramo es contratar <b>Via Verde Visitors</b> antes de salir. Si no la usáis, pagad con tarjeta en las cabinas normales y registrad la matrícula para los tramos electrónicos.</p><div class="prep-links"><a class="mini-link" target="_blank" rel="noopener" href="https://visitors.viaverde.pt/">Via Verde Visitors ›</a><a class="mini-link" target="_blank" rel="noopener" href="https://www.portugaltolls.com/">Portugal Tolls ›</a></div><div class="prep-alert"><b>Importante:</b> no entres por un carril Via Verde sin dispositivo o registro asociado.</div></div></section><section class="prep-block"><span class="prep-number">03</span><div><h3>Móvil y pagos</h3><p>En Portugal podéis usar llamadas, SMS y datos con las condiciones de vuestra tarifa española, sujeto al uso razonable. La tarjeta funciona en casi todas partes, pero conviene llevar <b>30–50 € en efectivo</b> para mercados, áreas camper o pequeños comercios.</p></div></section><section class="prep-block"><span class="prep-number">04</span><div><h3>Camper</h3><p>Para pernoctar, priorizad áreas autorizadas y comprobad siempre la señalización municipal. Fuera de espacios protegidos y salvo normas locales, la referencia general es un máximo de 48 horas en el mismo municipio. No despleguéis toldo, mesas o calzos fuera de zonas habilitadas.</p></div></section><section class="prep-block reservations"><span class="prep-number">05</span><div><h3>Reservas antes de salir</h3><p>Marca cada punto cuando esté resuelto. Los horarios y la disponibilidad pueden cambiar.</p>${item('lello','Livraria Lello','Comprar ticket con hora antes de llegar a Oporto.')}${item('grahams','Graham’s 1890 Lodge','Confirmar visita familiar y horario de la cata.')}${item('eclipse','Gafas para el eclipse','Llevar cuatro gafas homologadas ISO 12312-2 para el 12 de agosto.')}${item('maps','Mapas sin conexión','Descargar Lisboa, Óbidos, Nazaré, Aveiro, Oporto y Burgos.')}${item('documents','Documentación','DNI de los cuatro, tarjetas sanitarias y papeles de la camper.')}</div></section><section class="prep-block"><span class="prep-number">06</span><div><h3>Apps útiles</h3><div class="app-chips"><span>Bolt</span><span>Park4Night</span><span>Google Maps</span><span>Via Verde</span><span>Windy</span><span>GasAll</span></div></div></section><p class="prep-foot">Revisado para el viaje de agosto de 2026. Confirma peajes, reservas y normativa local en las webs oficiales antes de salir.</p></div>`)}
 function backup(){openModal(`<div class="detail-content"><h1>Copia de seguridad</h1><div class="panel"><p>Descarga un archivo con la bitácora, gastos, misiones y checklist.</p><div class="actions"><button class="btn" data-export>Exportar datos</button><label class="btn ghost">Importar archivo<input id="importFile" type="file" accept="application/json" hidden></label><button class="btn ghost danger" data-reset>Reiniciar app</button></div></div></div>`)}
 document.addEventListener('click',e=>{const b=e.target.closest('button,a');if(!b)return;if(b.dataset.go)go(b.dataset.go);if(b.dataset.place)openPlace(b.dataset.place);if(b.dataset.day)openDay(b.dataset.day);if(b.dataset.city){cityFilter=b.dataset.city;go('explore')}if(b.dataset.filter){cityFilter=b.dataset.filter;render()}if(b.dataset.close!==undefined)closeModal();if(b.dataset.tool==='journal')journal();if(b.dataset.tool==='expenses')expenses();if(b.dataset.tool==='checklist')checklist();if(b.dataset.tool==='portugalPrep')portugalPrep();if(b.dataset.tool==='overnights')overnights();if(b.dataset.copyRoncao!==undefined){navigator.clipboard?.writeText(RONCAO_EMAIL).then(()=>toast('Mensaje copiado')).catch(()=>toast('No se pudo copiar'));}if(b.dataset.roncaoStatus){store.set('roncaoStatus',b.dataset.roncaoStatus);overnights();toast('Estado actualizado');}if(b.dataset.tool==='backup')backup();if(b.dataset.toggleDay){let a=store.get('doneDays',[]);a=a.includes(b.dataset.toggleDay)?a.filter(x=>x!==b.dataset.toggleDay):[...a,b.dataset.toggleDay];store.set('doneDays',a);toast('Jornada actualizada');openDay(b.dataset.toggleDay)}if(b.dataset.journalDay)journal(b.dataset.journalDay);if(b.dataset.journalPhotoPicker!==undefined){openPhotoPicker(async photo=>{pendingJournalPhoto=photo;const p=$('#journalPhotoPreview');if(p)p.innerHTML=`<img src="${pendingJournalPhoto}" alt="Foto del recuerdo"><button class="mini-action danger" data-remove-journal-photo>Quitar foto</button>`;toast('Fotografía lista')})}if(b.dataset.removeJournalPhoto!==undefined){pendingJournalPhoto=null;const p=$('#journalPhotoPreview');if(p)p.innerHTML='<span>Añade una fotografía de este día</span>'}if(b.dataset.saveJournal!==undefined){const all=store.get('journal',{}),id=$('#jday').value;all[id]={text:$('#jtext').value,rating:$('#jrating').value,photo:pendingJournalPhoto};store.set('journal',all);toast('Recuerdo guardado');closeModal();if(route==='journal')render()}if(b.dataset.addMission){missionEditor(b.dataset.addMission)}if(b.dataset.editMission){missionEditor(b.dataset.person,b.dataset.editMission)}if(b.dataset.photoMission){chooseMissionPhoto(b.dataset.person,b.dataset.photoMission)}if(b.dataset.deleteMission){if(confirm('¿Eliminar esta misión?')){const lists=missionLists();lists[b.dataset.person]=(lists[b.dataset.person]||[]).filter(m=>m.id!==b.dataset.deleteMission);saveMissionLists(lists);const checks=store.get('missions',{});delete checks[b.dataset.deleteMission];store.set('missions',checks);render();toast('Misión eliminada')}}if(b.dataset.saveMission!==undefined){const text=$('#missionText').value.trim();if(!text)return toast('Escribe la misión');const lists=missionLists(),person=b.dataset.person,id=b.dataset.saveMission;if(id){const m=(lists[person]||[]).find(x=>x.id===id);if(m)m.text=text}else{(lists[person]||(lists[person]=[])).push({id:uid(person.toLowerCase()),text,photo:null})}saveMissionLists(lists);closeModal();render();toast('Misión guardada')}if(b.dataset.addExpense!==undefined){const name=$('#exName').value.trim(),amount=parseFloat($('#exAmount').value);if(!name||!amount)return toast('Completa concepto e importe');const a=store.get('expenses',[]);a.push({name,cat:$('#exCat').value,amount});store.set('expenses',a);expenses()}if(b.dataset.delExpense!==undefined){const a=store.get('expenses',[]);a.splice(Number(b.dataset.delExpense),1);store.set('expenses',a);expenses()}if(b.dataset.export!==undefined){const payload={version:3,exported:new Date().toISOString()};for(const k of ['doneDays','journal','missions','missionLists','expenses','checklist','prep','roncaoStatus'])payload[k]=store.get(k,k==='expenses'||k==='doneDays'?[]:{});const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}),u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download='VW340-portugal-datos.json';a.click();URL.revokeObjectURL(u)}if(b.dataset.reset!==undefined&&confirm('¿Borrar todos los datos guardados?')){Object.keys(localStorage).filter(k=>k.startsWith('vw340_')).forEach(k=>localStorage.removeItem(k));closeModal();render();toast('Datos reiniciados')}});
 document.addEventListener('input',e=>{if(e.target.id==='searchInput'){const q=e.target.value;store.set('search',q);const ps=D.places.filter(p=>(cityFilter==='Todos'||p.city===cityFilter)&&(`${p.name} ${p.city} ${p.tag} ${p.summary}`.toLowerCase().includes(q.toLowerCase())));const g=$('#placeGrid');if(g)g.innerHTML=ps.length?ps.map(placeCard).join(''):'<div class="empty">No hay resultados.</div>'}});

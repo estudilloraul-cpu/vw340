@@ -1,31 +1,6 @@
 window.APP_DATA={
   "places": [
     {
-      "id": "feira",
-      "city": "Lisboa",
-      "name": "Feira da Ladra",
-      "tag": "Mercado",
-      "img": "lisbon flea market portugal",
-      "time": "Martes y sábados · aprox. 09:00–18:00",
-      "price": "Gratis",
-      "duration": "1 h 30 min",
-      "best": "10:00, antes del calor",
-      "coords": "38.7154,-9.1258",
-      "address": "Campo de Santa Clara",
-      "summary": "El mercadillo más famoso de Lisboa, lleno de antigüedades, cerámica, libros, ropa y objetos inesperados.",
-      "history": "Su origen se remonta al siglo XIII. Se celebra alrededor de Santa Clara y São Vicente de Fora.",
-      "tips": [
-        "Llegad pronto para verlo con calma.",
-        "Llevad efectivo y vigilad los objetos personales.",
-        "Combina perfectamente con Alfama y el castillo."
-      ],
-      "kids": "Reto: encontrar el objeto más antiguo, el más extraño y el mejor azulejo.",
-      "food": "Café o desayuno alrededor del Mercado de Santa Clara.",
-      "official": "https://www.visitlisboa.com/en/places/feira-da-ladra-flea-market",
-      "photo": "images/real-lisboa-tram.jpg",
-      "map": "https://www.google.com/maps/search/?api=1&query=38.7154,-9.1258"
-    },
-    {
       "id": "alfama",
       "city": "Lisboa",
       "name": "Alfama",
@@ -249,106 +224,6 @@ window.APP_DATA={
       "official": "https://lxfactory.com/",
       "photo": "images/real-lisboa.jpg",
       "map": "https://www.google.com/maps/search/?api=1&query=38.7037,-9.1780"
-    },
-    {
-      "id": "pena",
-      "city": "Sintra",
-      "name": "Palácio Nacional da Pena",
-      "tag": "Palacio",
-      "img": "pena palace sintra portugal",
-      "time": "Parque 09:00–19:00 · palacio 09:30–18:30; acceso con franja",
-      "price": "Entrada de pago",
-      "duration": "2–3 h",
-      "best": "Primera franja o tarde",
-      "coords": "38.7876,-9.3906",
-      "address": "Estrada da Pena",
-      "summary": "Palacio romántico de colores intensos sobre la sierra de Sintra.",
-      "history": "Fernando II transformó un antiguo monasterio en una residencia romántica durante el siglo XIX.",
-      "tips": [
-        "La hora del billete es para entrar al palacio, no al parque.",
-        "No se accede en vehículo privado hasta la puerta.",
-        "Calculad subida, bus y controles."
-      ],
-      "kids": "Elegid la fachada más fantástica y dibujad su silueta en un minuto.",
-      "food": "Llevad agua y algo ligero; opciones dentro son limitadas y concurridas.",
-      "official": "https://www.parquesdesintra.pt/en/parks-monuments/park-and-national-palace-of-pena/",
-      "photo": "images/real-sintra.jpg",
-      "map": "https://www.google.com/maps/search/?api=1&query=38.7876,-9.3906"
-    },
-    {
-      "id": "regaleira",
-      "city": "Sintra",
-      "name": "Quinta da Regaleira",
-      "tag": "Jardines",
-      "img": "quinta regaleira sintra portugal",
-      "time": "Horario estacional · reserva aconsejada",
-      "price": "Entrada de pago",
-      "duration": "2 h",
-      "best": "Primera hora",
-      "coords": "38.7963,-9.3960",
-      "address": "Rua Barbosa du Bocage 5",
-      "summary": "Jardines laberínticos con grutas, pasadizos, torres y el célebre Pozo Iniciático.",
-      "history": "Fue diseñada a comienzos del siglo XX para António Augusto Carvalho Monteiro con referencias simbólicas y esotéricas.",
-      "tips": [
-        "Guardad un mapa.",
-        "Pavimento húmedo y escaleras.",
-        "El pozo suele generar cola."
-      ],
-      "kids": "Misión secreta: encontrar túnel, torre, animal de piedra y símbolo misterioso.",
-      "food": "Travesseiro o queijada en el centro después.",
-      "official": "https://www.regaleira.pt/",
-      "photo": "images/real-sintra.jpg",
-      "map": "https://www.google.com/maps/search/?api=1&query=38.7963,-9.3960"
-    },
-    {
-      "id": "sintra-centro",
-      "city": "Sintra",
-      "name": "Centro histórico de Sintra",
-      "tag": "Paseo",
-      "img": "sintra old town portugal",
-      "time": "Siempre accesible",
-      "price": "Gratis",
-      "duration": "1 h 30 min",
-      "best": "Después de los palacios",
-      "coords": "38.7974,-9.3907",
-      "address": "Volta do Duche",
-      "summary": "Calles románticas entre montaña, fuentes, tiendas y el Palacio Nacional.",
-      "history": "La villa fue residencia de la corte portuguesa y paisaje cultural de la UNESCO.",
-      "tips": [
-        "No mováis la camper entre monumentos.",
-        "Las calles tienen pendiente.",
-        "Evitad concentrar Pena y Regaleira con demasiadas prisas."
-      ],
-      "kids": "Comparad las dos enormes chimeneas del Palacio Nacional con objetos cotidianos.",
-      "food": "Queijadas y travesseiros de Sintra.",
-      "official": "https://visitsintra.travel/",
-      "photo": "images/real-sintra.jpg",
-      "map": "https://www.google.com/maps/search/?api=1&query=38.7974,-9.3907"
-    },
-    {
-      "id": "cabo-roca",
-      "city": "Sintra",
-      "name": "Cabo da Roca",
-      "tag": "Naturaleza",
-      "img": "cabo da roca portugal cliffs",
-      "time": "Siempre accesible",
-      "price": "Gratis",
-      "duration": "45 min",
-      "best": "Última tarde con buena visibilidad",
-      "coords": "38.7804,-9.4989",
-      "address": "Estrada do Cabo da Roca",
-      "summary": "Acantilado atlántico en el extremo occidental de la Europa continental.",
-      "history": "Luís de Camões describió este territorio como el lugar donde la tierra termina y comienza el mar.",
-      "tips": [
-        "Mucho viento incluso en verano.",
-        "No salgáis de las zonas seguras.",
-        "Comprobad niebla antes de desviaros."
-      ],
-      "kids": "Medid el viento con una cinta o pañuelo y describid el sonido del Atlántico.",
-      "food": "Picnic protegido del viento.",
-      "official": "https://visitsintra.travel/",
-      "photo": "images/real-sintra.jpg",
-      "map": "https://www.google.com/maps/search/?api=1&query=38.7804,-9.4989"
     },
     {
       "id": "obidos-vila",
@@ -820,19 +695,18 @@ window.APP_DATA={
   "trip": [
     {
       "id": "D0",
-      "date": "2026-08-10",
+      "date": "2026-08-11",
       "city": "Lisboa",
       "title": "Chiclana → Lisboa",
-      "meta": "547 km · etapa de llegada",
+      "meta": "547 km · etapa de llegada y comienzo real del viaje",
       "hero": "chiclana lisbon road trip camper portugal",
       "items": [
         "10:00 · Salida desde Chiclana",
         "14:00 · Comida y descanso en ruta",
-        "20:00 · Llegada y organización del camping"
+        "20:00 aprox. · Llegada a Lisboa Camping",
+        "20:30 · Instalación tranquila y cena ligera"
       ],
-      "places": [
-        "feira"
-      ],
+      "places": [],
       "photo": "images/real-lisboa.jpg",
       "transport": {
         "mode": "Camper",
@@ -871,21 +745,23 @@ window.APP_DATA={
     },
     {
       "id": "D1",
-      "date": "2026-08-11",
+      "date": "2026-08-12",
       "city": "Lisboa",
-      "title": "Mercado, Alfama y castillo",
-      "meta": "Feira da Ladra · Alfama · São Jorge · Chiado",
+      "title": "Alfama, castillo, Chiado y eclipse",
+      "meta": "Centro histórico, miradores y final del día pendiente del cielo",
       "hero": "lisbon tram alfama portugal",
       "items": [
-        "08:45 · Salida del camping",
-        "10:00 · Feira da Ladra",
-        "11:45 · Alfama",
-        "13:15 · Castelo de São Jorge",
+        "09:00 · Salida del camping",
+        "10:00 · Alfama",
+        "12:00 · Castelo de São Jorge",
         "16:30 · Chiado y Baixa",
-        "20:30 · Cena"
+        "18:00 · Regreso al entorno del camping",
+        "18:15 · Miradouro do Moinho do Penedo · preparar gafas",
+        "18:39 · Comienza el eclipse parcial",
+        "19:36 · Máximo del eclipse en Lisboa",
+        "20:29 · Final del eclipse y vuelta al camping"
       ],
       "places": [
-        "feira",
         "alfama",
         "castelo",
         "miradouro",
@@ -894,10 +770,10 @@ window.APP_DATA={
       "photo": "images/real-lisboa.jpg",
       "transport": {
         "mode": "Bolt recomendado",
-        "title": "Camping → Feira da Ladra",
-        "recommendation": "Id en Bolt hasta Campo de Santa Clara. Es la opción más cómoda para llegar temprano y evita un trayecto con transbordos de alrededor de una hora.",
-        "detail": "Bolt orientativo: 11–16 € por coche y 20–30 min. Transporte público: 6,88–7,60 € para los cuatro, pero 55–75 min con transbordo. Para volver, comparad Bolt con el autobús 714 desde el centro.",
-        "note": "El precio de Bolt cambia según tráfico y demanda. Comprobadlo justo antes de salir.",
+        "title": "Camping → Alfama / centro histórico",
+        "recommendation": "Para la mañana, Bolt suele ser la opción más cómoda con niñas y evita transbordos largos. Calculad también el regreso con tiempo para volver al camping antes del eclipse.",
+        "detail": "Bolt orientativo: 11–16 € por coche y 20–30 min. Transporte público: más barato, pero más lento y con transbordos según la hora.",
+        "note": "Por la tarde, priorizad regresar con margen al camping para acercaros luego al mirador del eclipse.",
         "boltUrl": "https://bolt.eu/en/cities/lisbon/",
         "boltLabel": "Abrir Bolt en Lisboa"
       },
@@ -938,17 +814,19 @@ window.APP_DATA={
     },
     {
       "id": "D2",
-      "date": "2026-08-12",
+      "date": "2026-08-13",
       "city": "Lisboa",
       "title": "Belém y Lisboa creativa",
-      "meta": "Jerónimos · Pastéis · Tajo · MAAT · LX Factory",
+      "meta": "Monumentos junto al Tajo, Pastéis de Belém y salida después hacia Óbidos",
       "hero": "belem lisbon portugal sunset",
       "items": [
         "09:30 · Mosteiro dos Jerónimos",
         "11:00 · Pastéis de Belém",
         "12:00 · Torre y Padrão",
         "15:30 · MAAT",
-        "17:30 · LX Factory"
+        "17:30 · LX Factory",
+        "19:00 · Salida hacia Óbidos",
+        "20:15 aprox. · Pernocta en área/camper park"
       ],
       "places": [
         "jeronimos",
@@ -961,9 +839,9 @@ window.APP_DATA={
       "transport": {
         "mode": "714 o Bolt",
         "title": "Camping → Belém",
-        "recommendation": "Mirad primero Bolt. Si aparece por debajo de 9 €, suele compensar para cuatro personas. Si sube de precio, tomad el autobús 714 directo desde Pq. Campismo hasta Mosteiro dos Jerónimos.",
-        "detail": "714: 6,88–9,20 € para los cuatro por trayecto y unos 15–25 min. Bolt: aproximadamente 6–9 € por coche y 10–18 min.",
-        "note": "Para solo ida y vuelta no compensa el abono de 24 horas.",
+        "recommendation": "Misma lógica que en el plan original: comparad Bolt y, si no compensa, usad el autobús 714 directo hasta Jerónimos.",
+        "detail": "714: cómodo para un día lineal por Belém. Bolt: útil si os ahorra tiempo con las niñas o si queréis ir directos al inicio del recorrido.",
+        "note": "Después de LX Factory, la jornada continúa en camper hasta la zona de Óbidos.",
         "boltUrl": "https://bolt.eu/en/cities/lisbon/",
         "boltLabel": "Comparar precio en Bolt"
       },
@@ -1003,76 +881,17 @@ window.APP_DATA={
       }
     },
     {
-      "id": "D3",
-      "date": "2026-08-13",
-      "city": "Sintra",
-      "title": "Palacios y bosques de Sintra",
-      "meta": "Pena · centro histórico · opción Regaleira",
-      "hero": "sintra pena palace portugal",
-      "items": [
-        "08:00 · Salida",
-        "09:30 · Palacio da Pena",
-        "13:30 · Centro histórico",
-        "15:30 · Quinta da Regaleira opcional",
-        "18:30 · Pernocta"
-      ],
-      "places": [
-        "pena",
-        "sintra-centro",
-        "regaleira",
-        "cabo-roca"
-      ],
-      "photo": "images/real-sintra.jpg",
-      "transport": {
-        "mode": "Camper + bus local",
-        "title": "Moverse por Sintra",
-        "recommendation": "Llegad en la camper y evitad subir con ella a Pena. Aparcad o dejadla en la zona de pernocta y utilizad el transporte local hacia los palacios.",
-        "detail": "Para Pena y el centro, priorizad los buses turísticos/locales. Bolt puede servir como alternativa si hay mucha espera o las niñas están cansadas.",
-        "note": "El tráfico y el aparcamiento cerca de los palacios suelen ser complicados.",
-        "boltUrl": "https://bolt.eu/en/cities/lisbon/",
-        "boltLabel": "Abrir Bolt como alternativa"
-      },
-      "dining": {
-        "title": "Dónde comer hoy",
-        "intro": "Comed en el centro histórico antes de Regaleira y aprovechad la pastelería tradicional de Sintra.",
-        "restaurant": {
-          "time": "13:30 · Comida",
-          "name": "Tascantiga",
-          "type": "Petiscos portugueses",
-          "price": "€€ · para compartir",
-          "why": "Muy bien situada en el casco histórico y adecuada para probar varios platos sin una comida pesada.",
-          "dish": "Petiscos, gambas al ajo y platos de cerdo.",
-          "image": "images/sintra-centro.webp",
-          "map": "https://www.google.com/maps/search/?api=1&query=Tascantiga+Sintra"
-        },
-        "takeaway": {
-          "label": "Opción rápida",
-          "name": "Empada o salgado portugués",
-          "text": "Buena alternativa si queréis dedicar más tiempo a los palacios y comer algo caminando por el centro.",
-          "price": "≈ 2–5 €",
-          "image": "images/sintra.webp"
-        },
-        "sweet": {
-          "label": "Dulce de Sintra",
-          "name": "Travesseiro y queijada",
-          "text": "Compartid un travesseiro de almendra y una queijada. Es la parada gastronómica más propia de Sintra.",
-          "price": "≈ 2–4 €",
-          "image": "images/sintra-dulces.webp",
-          "map": "https://www.google.com/maps/search/?api=1&query=Casa+Piriquita+Sintra"
-        }
-      }
-    },
-    {
       "id": "D4",
       "date": "2026-08-14",
       "city": "Óbidos y Nazaré",
-      "title": "Murallas y Atlántico",
-      "meta": "Óbidos · Sítio · faro · playa",
+      "title": "Óbidos y Nazaré",
+      "meta": "Murallas, Atlántico y segunda parte del viaje",
       "hero": "obidos nazare portugal travel",
       "items": [
-        "09:00 · Salida",
-        "10:00 · Óbidos",
-        "14:30 · Llegada a Nazaré",
+        "09:00 · Paseo breve por Óbidos / salida",
+        "10:30 · Último tramo o visita principal en Óbidos",
+        "13:30 · Comida / salida hacia Nazaré",
+        "14:30 aprox. · Llegada a Nazaré",
         "16:00 · Sítio y faro",
         "19:00 · Paseo marítimo"
       ],
@@ -1188,8 +1007,8 @@ window.APP_DATA={
       "id": "D6",
       "date": "2026-08-16",
       "city": "Oporto",
-      "title": "Llegada al Duero",
-      "meta": "Ribeira · puente · Gaia",
+      "title": "Oporto y Gaia",
+      "meta": "Ribeira, puente y primera gran tarde junto al Duero",
       "hero": "porto ribeira portugal river",
       "items": [
         "09:30 · Salida",
@@ -1250,66 +1069,63 @@ window.APP_DATA={
       "id": "D7",
       "date": "2026-08-17",
       "city": "Oporto",
-      "title": "Azulejos, mercado y miradores",
-      "meta": "São Bento · Bolhão · Lello · Clérigos · Gaia · Graham's Lodge",
+      "title": "Graham’s → Porto Antigo → Quinta do Roncão",
+      "meta": "Bodega al mediodía, comida portuguesa y pernocta entre viñedos",
       "hero": "porto sao bento azulejos portugal",
       "items": [
-        "09:00 · São Bento",
-        "10:00 · Mercado do Bolhão",
-        "12:00 · Livraria Lello",
-        "14:00 · Clérigos y centro",
-        "19:00 · Atardecer en Gaia",
-        "16:30 · Visita familiar a Graham's 1890 Lodge"
+        "12:00 · Visita y cata en Graham’s 1890 Lodge",
+        "13:45 aprox. · Porto Antigo Comida Caseira",
+        "15:30–16:00 · Salida hacia Quinta do Roncão",
+        "≈ 1 h 20 min · carretera hacia el Douro",
+        "17:00 aprox. · Llegada a Quinta do Roncão",
+        "Tarde tranquila entre viñedos",
+        "Pernocta en la Quinta"
       ],
       "places": [
-        "saobento",
-        "bolhao",
-        "lello",
-        "clerigos",
         "gaia",
         "grahams"
       ],
-      "photo": "images/real-porto.jpg",
+      "photo": "images/porto-gaia.webp",
       "transport": {
         "mode": "A pie + Bolt puntual",
-        "title": "Centro de Oporto y Graham’s",
-        "recommendation": "São Bento, Bolhão, Lello y Clérigos se enlazan bien caminando. Para Graham’s, utilizad Bolt si queréis evitar la subida pronunciada hasta la bodega, especialmente con las niñas.",
-        "detail": "Pedid el coche hacia Graham’s 1890 Lodge y después bajad a Gaia o Ribeira según el plan del atardecer.",
-        "note": "Comprobad el precio antes de solicitar el viaje y reservad la bodega previamente.",
+        "title": "Mañana en Gaia y salida hacia el Douro",
+        "recommendation": "Si hacéis algo antes de Graham’s, movedos a pie por Gaia o pedid un Bolt corto. Después de comer, el resto del día ya es en camper hacia la quinta.",
+        "detail": "Graham’s y Porto Antigo quedan bien encadenados antes del trayecto al Douro.",
+        "note": "Conviene salir de Oporto sin alargar demasiado la sobremesa para llegar con luz a la quinta.",
         "boltUrl": "https://bolt.eu/en/cities/porto/",
-        "boltLabel": "Abrir Bolt para Graham’s"
+        "boltLabel": "Abrir Bolt en Oporto"
       },
       "dining": {
         "title": "Dónde comer hoy",
         "intro": "El Mercado do Bolhão es ideal para comer sin romper el recorrido y probar distintos productos portugueses.",
         "restaurant": {
-          "time": "13:00 · Comida",
-          "name": "Bolhão a Gosto",
-          "type": "Comida tradicional portuguesa",
-          "price": "€€ · raciones abundantes",
-          "why": "Junto al mercado, práctico para continuar hacia Lello y Clérigos sin desplazamientos extra.",
-          "dish": "Plato del día, bacalhau o carne guisada.",
-          "image": "images/porto-bolhao.webp",
-          "map": "https://www.google.com/maps/search/?api=1&query=Bolh%C3%A3o+a+Gosto+Porto"
+          "time": "13:45 · Comida",
+          "name": "Porto Antigo Comida Caseira",
+          "type": "Cocina portuguesa",
+          "price": "€ · económico",
+          "why": "Está muy bien ubicado tras la visita a Graham’s y antes de poner rumbo a Quinta do Roncão.",
+          "dish": "Comida casera portuguesa, platos del día y raciones sencillas.",
+          "image": "images/porto-comida.webp",
+          "map": "https://www.google.com/maps/search/?api=1&query=Porto+Antigo+Comida+Caseira+Vila+Nova+de+Gaia"
         },
         "alternative": {
-          "name": "Taberninha do Manel · cena",
-          "text": "Después de Graham’s, bajad hacia Gaia para una cena portuguesa informal junto al río.",
-          "map": "https://www.google.com/maps/search/?api=1&query=Taberninha+do+Manel+Vila+Nova+de+Gaia"
+          "name": "Picoteo rápido por Gaia",
+          "text": "Si vais justos de tiempo, mejor una comida rápida y salir antes hacia la quinta.",
+          "map": "https://www.google.com/maps/search/?api=1&query=Vila+Nova+de+Gaia+restaurante+portugues"
         },
         "takeaway": {
-          "label": "Picoteo del mercado",
-          "name": "Queijo, presunto, aceitunas y empadas",
-          "text": "Comprad pequeñas porciones en Bolhão y compartidlas. Es más divertido y flexible con las niñas.",
-          "price": "≈ 5–12 € para compartir",
-          "image": "images/porto-comida.webp"
+          "label": "Para la tarde",
+          "name": "Agua y algo ligero para la quinta",
+          "text": "Compradlo antes de salir de Gaia por si luego os apetece picar algo entre viñedos.",
+          "price": "Según compra",
+          "image": "images/porto-gaia.webp"
         },
         "sweet": {
-          "label": "Plato a compartir",
-          "name": "Francesinha",
-          "text": "Es muy contundente: compartid una entre los adultos o pedid una versión sencilla. No hace falta convertirla en comida completa.",
-          "price": "≈ 10–16 €",
-          "image": "images/porto.webp"
+          "label": "Capricho",
+          "name": "Algo dulce en Gaia",
+          "text": "Un último pastel o café con vistas antes de salir de Oporto.",
+          "price": "≈ 2–4 €",
+          "image": "images/real-porto.jpg"
         }
       }
     },
@@ -1333,7 +1149,7 @@ window.APP_DATA={
         "entre-pozas",
         "frias-casco"
       ],
-      "photo": "images/real-burgos.jpg",
+      "photo": "images/photo-tobera.jpg",
       "transport": {
         "mode": "Camper",
         "title": "Quinta do Roncão → Tobera → Frías",
@@ -1380,7 +1196,7 @@ window.APP_DATA={
       "date": "2026-08-19",
       "city": "Burgos y Logroño",
       "title": "Frías → Burgos → Logroño",
-      "meta": "1 h hasta Burgos · 1 h 30 min hasta Logroño",
+      "meta": "Catedral, pinchos y última noche del viaje",
       "hero": "Burgos Logrono road trip camper",
       "items": [
         "09:00 · Salida de Frías",
@@ -1395,7 +1211,7 @@ window.APP_DATA={
         "burgos-cat",
         "logrono-laurel"
       ],
-      "photo": "images/real-burgos.jpg",
+      "photo": "images/photo-logrono.jpg",
       "transport": {
         "mode": "Camper + a pie",
         "title": "Frías → Burgos → Logroño",
@@ -1451,7 +1267,7 @@ window.APP_DATA={
         "13:15 · Llegada aproximada a Sabadell"
       ],
       "places": [],
-      "photo": "images/regreso.webp",
+      "photo": "images/photo-road.jpg",
       "transport": {
         "mode": "Camper",
         "title": "Logroño → Sabadell",
@@ -1496,14 +1312,6 @@ window.APP_DATA={
       "img": "lisbon portugal city",
       "count": 10,
       "photo": "images/real-lisboa.jpg"
-    },
-    {
-      "id": "sintra",
-      "name": "Sintra",
-      "subtitle": "Bosques, palacios y fantasía",
-      "img": "sintra portugal palace",
-      "count": 4,
-      "photo": "images/real-sintra.jpg"
     },
     {
       "id": "obidos",
@@ -1559,7 +1367,7 @@ window.APP_DATA={
       "subtitle": "Castillo y casas colgadas",
       "img": "Frias Burgos",
       "count": 1,
-      "photo": "images/real-burgos.jpg"
+      "photo": "images/photo-frias.jpg"
     },
     {
       "id": "logrono",
@@ -1567,7 +1375,7 @@ window.APP_DATA={
       "subtitle": "Pinchos y última noche",
       "img": "Logrono Rioja",
       "count": 1,
-      "photo": "images/restaurantes.webp"
+      "photo": "images/photo-logrono.jpg"
     }
   ],
   "missions": {
@@ -1588,5 +1396,5 @@ window.APP_DATA={
       "Busca caballo, persona y tren en los azulejos de São Bento."
     ]
   },
-  "updated": "30 de julio de 2026 · tramo final, pernoctas y navegación diaria"
+  "updated": "10 de agosto de 2026 · replan Lisboa 11–13, Sintra cancelada y últimas etapas con fotos reales"
 };
