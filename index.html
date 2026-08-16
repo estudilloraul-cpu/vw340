@@ -1,41 +1,210 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#f8f4ed">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="Bitácora">
-  <title>VW340 · Portugal 2026</title>
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f5efe6">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="VW340 Portugal">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icons/icon-192.png">
+<title>VW340 · Portugal 2026</title>
+<style>
+:root{
+  --bg:#f5efe6; --paper:#fffdf9; --ink:#262321; --muted:#777069;
+  --terr:#b9654f; --sand:#d9c4a4; --coal:#2b2a29; --line:#e8ded2;
+  --shadow:0 12px 34px rgba(45,38,31,.09); --r:22px;
+}
+*{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif}
+body{padding-bottom:92px}.app{max-width:560px;margin:auto;min-height:100svh}
+button,input,textarea{font:inherit}.top{position:sticky;top:0;z-index:20;padding:calc(13px + env(safe-area-inset-top)) 18px 10px;background:rgba(245,239,230,.86);backdrop-filter:blur(22px);border-bottom:1px solid rgba(90,70,50,.08);display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:950;letter-spacing:-.075em;font-size:20px}.logo b{color:var(--terr)}.where{font-size:12px;color:var(--muted);font-weight:700}
+main{padding:14px 16px 26px}.hero{border-radius:30px;overflow:hidden;min-height:420px;position:relative;background:#342f2b url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Ponte%20de%20Dom%20Lu%C3%ADs%20I%20and%20Ribeira%2C%20Porto%20%2854795128175%29.jpg") center/cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,15,12,.04),rgba(20,15,12,.14) 42%,rgba(20,15,12,.79))}
+.hero-copy{position:absolute;z-index:2;left:22px;right:22px;bottom:24px;color:white}
+.kicker{font-size:11px;letter-spacing:.13em;text-transform:uppercase;font-weight:900}.hero h1{font-size:46px;line-height:.93;letter-spacing:-.055em;margin:9px 0 9px}.hero p{font-size:17px;line-height:1.4;margin:0;max-width:390px}
+.chips{display:flex;gap:8px;overflow:auto;padding:14px 0 4px;scrollbar-width:none}.chip{white-space:nowrap;border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:10px 13px;font-weight:750;font-size:12px}
+.section{margin-top:26px}.section-head{display:flex;align-items:end;justify-content:space-between;margin:0 2px 11px}.section h2{font-size:28px;letter-spacing:-.035em;margin:0}.section small{color:var(--muted)}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:17px;margin:10px 0;box-shadow:var(--shadow)}
+.card h3{font-size:20px;margin:4px 0 7px;letter-spacing:-.02em}.card p{line-height:1.55;margin:5px 0;color:#4c4743}.tag{font-size:10px;letter-spacing:.11em;text-transform:uppercase;font-weight:900;color:var(--terr)}
+.timeline{position:relative;padding-left:19px}.timeline:before{content:"";position:absolute;left:6px;top:8px;bottom:8px;width:1px;background:var(--line)}.stop{position:relative;padding:0 0 19px 11px}.stop:before{content:"";position:absolute;left:-17px;top:6px;width:9px;height:9px;border-radius:50%;background:var(--terr);box-shadow:0 0 0 4px var(--bg)}.stop b{display:block}.stop span{font-size:13px;color:var(--muted)}
+.quote{background:var(--coal);color:#f8f2e9;border-radius:28px;padding:23px;margin-top:12px}.quote p{font-size:22px;line-height:1.3;letter-spacing:-.02em;margin:0}.quote small{display:block;margin-top:12px;color:#d7cec5}
+.photo-card{padding:0;overflow:hidden}.photo{height:180px;background-size:cover;background-position:center}.photo-card .inside{padding:16px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.grid .card{margin:0;min-height:140px}
+.btn{border:0;background:var(--coal);color:white;border-radius:14px;padding:12px 14px;font-weight:800;margin-top:9px}.btn.alt{background:#efe5d9;color:var(--coal)}.btn.terr{background:var(--terr)}
+.nav{position:fixed;z-index:30;bottom:0;left:50%;transform:translateX(-50%);width:min(560px,100%);display:grid;grid-template-columns:repeat(5,1fr);background:rgba(255,253,249,.94);backdrop-filter:blur(24px);padding:8px 6px calc(8px + env(safe-area-inset-bottom));border-top:1px solid var(--line)}
+.nav button{border:0;background:none;color:#79726b;font-size:10px;font-weight:800;padding:4px}.nav b{display:block;font-size:20px;line-height:1.1;margin-bottom:2px}.nav button.active{color:var(--terr)}
+.view{display:none}.view.active{display:block}.daycard{display:flex;gap:12px;align-items:flex-start}.date{width:49px;flex:0 0 49px;text-align:center;border-radius:15px;background:#efe5d9;padding:9px 3px}.date b{font-size:20px;display:block}.date span{font-size:9px;font-weight:850;color:var(--muted)}
+.mission{display:flex;gap:12px;align-items:flex-start}.mission input{margin-top:4px;width:20px;height:20px;accent-color:var(--terr)}.mission.done div{text-decoration:line-through;color:var(--muted)}
+textarea{width:100%;min-height:170px;border:1px solid var(--line);background:#fff;border-radius:16px;padding:14px;resize:vertical;outline:none}textarea:focus{border-color:var(--terr)}
+.photo-preview{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:10px}.photo-preview img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px}
+.searchbar{display:flex;gap:8px}.searchbar input{flex:1;border:1px solid var(--line);background:white;border-radius:14px;padding:12px}
+.note{font-size:13px;color:var(--muted);line-height:1.5}.route-pill{display:inline-block;margin:4px 4px 0 0;background:#efe5d9;padding:7px 10px;border-radius:999px;font-size:11px;font-weight:800}
+@media(max-width:370px){.hero h1{font-size:40px}.grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-  <div id="fatal" hidden><h1>No se ha podido iniciar la app</h1><p>Recarga la página. Si continúa, borra los datos del sitio y vuelve a abrirla.</p></div>
-  <div id="app">
-    <header class="topbar">
-      <button class="icon-button" id="menuBtn" data-go="more" aria-label="Más opciones">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M4 12h16M4 17.5h16"/></svg>
-      </button>
-      <button class="wordmark brand-home" data-go="cover" aria-label="Volver a la portada"><img src="images/logo-vw340-charcoal.png" alt="VW340"></button>
-      <button class="icon-button" id="searchBtn" aria-label="Buscar">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.6"/><path d="m16 16 4 4"/></svg>
-      </button>
-    </header>
-    <main id="view" tabindex="-1"></main>
-    <nav class="bottom" aria-label="Navegación principal">
-      <button data-go="cover" class="nav-brand-home"><span class="navicon"><img src="images/logo-vw340-terracotta.png" alt=""></span><em>Inicio</em></button>
-      <button data-go="route"><span class="navicon"><svg viewBox="0 0 24 24"><path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z"/><circle cx="12" cy="10" r="2.2"/></svg></span><em>Ruta</em></button>
-      <button data-go="girls"><span class="navicon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.5 10h.01M15.5 10h.01M8.5 14c1.1 1.35 2.25 2 3.5 2s2.4-.65 3.5-2"/></svg></span><em>Misiones</em></button>
-      <button data-go="journal"><span class="navicon"><svg viewBox="0 0 24 24"><path d="M5 4.5h10.5A3.5 3.5 0 0 1 19 8v11H8.5A3.5 3.5 0 0 1 5 15.5z"/><path d="M8 4.5v11A3.5 3.5 0 0 0 11.5 19"/></svg></span><em>Bitácora</em></button>
-      <button data-go="more"><span class="navicon"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.4"/><circle cx="12" cy="12" r="1.4"/><circle cx="19" cy="12" r="1.4"/></svg></span><em>Más</em></button>
-    </nav>
+<div class="app">
+<header class="top"><div class="logo">VW<b>340</b></div><div class="where">PORTUGAL · 16 AGO 2026</div></header>
+<main>
+<section id="home" class="view active">
+  <div class="hero"><div class="hero-copy"><div class="kicker">Ahora · Oporto</div><h1>El viaje<br>que está pasando.</h1><p>Menos “hay que verlo” y más “aquí nos apetece estar”.</p></div></div>
+  <div class="chips"><span class="chip">Gazela ✓</span><span class="chip">Dona Francesinha ✓</span><span class="chip">Ribeira de noche ✓</span><span class="chip">Mañana · Lello 10:00</span><span class="chip">Graham’s 12:00</span></div>
+
+  <div class="quote"><p>“No queremos coleccionar monumentos. Queremos coleccionar sitios que luego recordemos.”</p><small>La nueva filosofía VW340</small></div>
+
+  <div class="section">
+    <div class="section-head"><h2>Hoy</h2><small>Oporto a nuestra manera</small></div>
+    <div class="card">
+      <div class="tag">16 agosto · día real</div>
+      <h3>De los jardines al puente por arriba</h3>
+      <div class="timeline">
+        <div class="stop"><b>Jardins do Palácio de Cristal</b><span>verde, vistas y empezar sin prisa</span></div>
+        <div class="stop"><b>Miguel Bombarda · Cedofeita</b><span>galerías, tiendas y calles con vida</span></div>
+        <div class="stop"><b>Carmo · Passeio das Virtudes</b><span>azulejos, cuesta y mirador</span></div>
+        <div class="stop"><b>Dona Francesinha</b><span>comida</span></div>
+        <div class="stop"><b>Caldeireiros · Clérigos · Sé</b><span>café y callejeo</span></div>
+        <div class="stop"><b>Ponte Dom Luís I · tablero superior</b><span>cruzar hacia Gaia</span></div>
+        <div class="stop"><b>Jardim do Morro</b><span>final del día</span></div>
+      </div>
+    </div>
   </div>
-  <div id="modal" class="modal" hidden><div class="sheet"><button class="close" data-close aria-label="Cerrar">×</button><div id="modalBody"></div></div></div>
-  <div id="toast" class="toast" hidden></div>
-  <script src="data.js"></script>
-  <script src="app.js"></script>
-</body>
-</html>
+
+  <div class="section">
+    <div class="section-head"><h2>Mañana</h2><small>17 agosto</small></div>
+    <div class="card">
+      <div class="tag">Plan operativo</div>
+      <h3>Lello → Graham’s → Duero</h3>
+      <p><b>Dejar la T5 en Tendinha.</b> Ir a la ciudad sin pelearse con aparcamientos y, después de la cata, volver a por la furgo antes de poner rumbo a la quinta.</p>
+      <div class="timeline">
+        <div class="stop"><b>09:40 · Livraria Lello</b><span>entrada reservada a las 10:00</span></div>
+        <div class="stop"><b>10:40–10:45 · salir</b><span>sin eternizarse; Bolt hacia Gaia</span></div>
+        <div class="stop"><b>11:40 aprox. · Graham’s 1890 Lodge</b><span>llegar 15–20 min antes de la cata</span></div>
+        <div class="stop"><b>12:00 · visita y cata</b><span>quesos curados de cabra/oveja + 6 chocolates con ganache LBV</span></div>
+        <div class="stop"><b>Después · volver a Tendinha</b><span>recoger la T5 y salir hacia Quinta do Roncão</span></div>
+      </div>
+      <button class="btn" onclick="maps('Livraria Lello, Porto')">Abrir Lello en Maps</button>
+      <button class="btn alt" onclick="maps('Graham\\'s 1890 Lodge, Vila Nova de Gaia')">Abrir Graham’s</button>
+    </div>
+  </div>
+</section>
+
+<section id="route" class="view">
+  <div class="section-head"><h2>Ruta real</h2><small>Lo que sí pasó</small></div>
+  <div class="card"><div class="timeline">
+    <div class="stop"><b>Chiclana → Lisboa</b><span>arranca el road trip</span></div>
+    <div class="stop"><b>Lisboa</b><span>Feira da Ladra · Alfama · Baixa · Chiado · Belém · LX Factory</span></div>
+    <div class="stop"><b>Sintra</b><span>cambio de ritmo</span></div>
+    <div class="stop"><b>Óbidos → Nazaré</b><span>y la sensación de “demasiado turístico”</span></div>
+    <div class="stop"><b>Vieira de Leiria</b><span>carretera y costa</span></div>
+    <div class="stop"><b>Praia de Mira → Costa Nova</b><span>noche en Camping Costa Nova</span></div>
+    <div class="stop"><b>Aveiro</b><span>Beira-Mar · Artes no Canal · mercados y callejeo</span></div>
+    <div class="stop"><b>Espinho → Oporto</b><span>cambio definitivo de enfoque</span></div>
+    <div class="stop"><b>Oporto / Vila Nova de Gaia</b><span>ahora</span></div>
+    <div class="stop"><b>Duero · Quinta do Roncão</b><span>siguiente etapa</span></div>
+    <div class="stop"><b>Tobera · Frías → Logroño → Sabadell</b><span>regreso</span></div>
+  </div></div>
+  <div class="card">
+    <div class="tag">Copiloto</div><h3>Buscar un punto rápido</h3>
+    <div class="searchbar"><input id="mapQuery" placeholder="tasca, mercado, parking…"><button class="btn terr" onclick="quickMaps()">Maps</button></div>
+    <p class="note">Abre una búsqueda de Google Maps alrededor del término que escribas.</p>
+  </div>
+</section>
+
+<section id="stories" class="view">
+  <div class="section-head"><h2>Crónicas</h2><small>El viaje contado</small></div>
+
+  <div class="card photo-card">
+    <div class="photo" style="background-image:url('https://commons.wikimedia.org/wiki/Special:Redirect/file/Lisboa%20-%20Portugal%20%2848720701776%29.jpg'),linear-gradient(#cab,#987)"></div>
+    <div class="inside"><div class="tag">Lisboa · día 2</div><h3>Baixa, Chiado y un café para rematar</h3>
+    <p>Después del vinito y el bocata de jamón bajamos callejeando hacia Baixa y Chiado. No había prisa por comer. Una recomendación cerca de Rossio acabó siendo justo lo que buscábamos: cocina portuguesa sin demasiada ceremonia, cola al sol, bacalao, sardinas, vino verde, Sagres y postres caseros. El café lo dejamos para Copenhagen Coffee Lab.</p></div>
+  </div>
+
+  <div class="card photo-card">
+    <div class="photo" style="background-image:url('https://commons.wikimedia.org/wiki/Special:Redirect/file/Aveiro%206.JPG')"></div>
+    <div class="inside"><div class="tag">Aveiro</div><h3>Menos atracciones. Más Beira-Mar.</h3>
+    <p>En Aveiro el viaje empezó a cambiar. Preferimos mercado, Artes no Canal, Beira-Mar y caminar sin objetivo antes que ir enlazando “cosas que hay que hacer”. Funcionó mejor.</p></div>
+  </div>
+
+  <div class="card photo-card">
+    <div class="photo" style="background-image:url('https://commons.wikimedia.org/wiki/Special:Redirect/file/Ponte%20Dom%20Luis%20I%20Porto.jpg')"></div>
+    <div class="inside"><div class="tag">Oporto · llegada</div><h3>Gazela, Rua das Flores y Ribeira de noche</h3>
+    <p>São Bento, un acierto absoluto en Gazela, bajar por Rua das Flores y acabar en Ribeira ya de noche. El puente lo vimos primero desde abajo. Al día siguiente tocaba cruzarlo por arriba.</p></div>
+  </div>
+</section>
+
+<section id="food" class="view">
+  <div class="section-head"><h2>Comer & beber</h2><small>Marcadores del viaje</small></div>
+  <div class="grid">
+    <div class="card"><div class="tag">Oporto</div><h3>Gazela</h3><p>Cachorrinhos y prego. De los sitios que ya definen el viaje.</p></div>
+    <div class="card"><div class="tag">Oporto</div><h3>Dona Francesinha</h3><p>Francesinha hecha. Tachada de la lista con gusto.</p></div>
+    <div class="card"><div class="tag">Lisboa</div><h3>Copenhagen Coffee Lab</h3><p>El patrón para cuando decimos “un café bueno”.</p></div>
+    <div class="card"><div class="tag">Portugal</div><h3>Probados</h3><p>Ginjinha · pastéis de Belém · bolas de Berlim · vino verde.</p></div>
+  </div>
+  <div class="card">
+    <div class="tag">Regla de oro</div><h3>Lo que buscamos</h3>
+    <p>Tascas y casas de comidas, portugueses en las mesas, platos sencillos, cuenta razonable. Si el menú parece diseñado para Instagram antes que para comer, seguimos caminando.</p>
+  </div>
+</section>
+
+<section id="girls" class="view">
+  <div class="section-head"><h2>Misiones</h2><small>Greta & Maria</small></div>
+  <div id="missions"></div>
+  <div class="card"><div class="searchbar"><input id="newMission" placeholder="Añadir una misión"><button class="btn terr" onclick="addMission()">+</button></div></div>
+</section>
+
+<section id="journal" class="view">
+  <div class="section-head"><h2>Bitácora</h2><small>Guardar el viaje</small></div>
+  <div class="card">
+    <div class="tag">Hoy</div><h3>16 agosto · Oporto</h3>
+    <textarea id="journalText" placeholder="¿Qué fue lo mejor del día? ¿Qué repetiríamos? ¿Qué no?"></textarea>
+    <button class="btn terr" onclick="saveJournal()">Guardar</button>
+  </div>
+  <div class="card">
+    <div class="tag">Fotos propias</div><h3>Añadir recuerdos</h3>
+    <label class="btn alt">Elegir fotos<input id="photoInput" type="file" accept="image/*" multiple hidden></label>
+    <div class="photo-preview" id="photoPreview"></div>
+    <p class="note">Se guardan en este dispositivo. No se suben a ningún servidor.</p>
+  </div>
+</section>
+</main>
+
+<nav class="nav">
+<button class="active" data-view="home"><b>⌂</b>Ahora</button>
+<button data-view="route"><b>⌁</b>Ruta</button>
+<button data-view="stories"><b>◫</b>Crónicas</button>
+<button data-view="girls"><b>✓</b>Misiones</button>
+<button data-view="journal"><b>▤</b>Bitácora</button>
+</nav>
+</div>
+<script>
+const defaultMissions=[
+ {t:"Encontrar un azulejo que ninguna de las dos haya visto antes",d:false},
+ {t:"Fotografiar el detalle más raro del Ponte Dom Luís I",d:false},
+ {t:"En Graham’s: descubrir para qué sirven las enormes barricas",d:false},
+ {t:"En el Duero: encontrar cinco tonos distintos de verde o tierra",d:false},
+ {t:"Elegir el cartel o rótulo portugués más bonito del viaje",d:false}
+];
+let state=JSON.parse(localStorage.getItem("vw340-real-2026")||"null")||{missions:defaultMissions,journal:"",photos:[]};
+function save(){localStorage.setItem("vw340-real-2026",JSON.stringify(state))}
+document.querySelectorAll(".nav button").forEach(b=>b.addEventListener("click",()=>{
+ document.querySelectorAll(".nav button").forEach(x=>x.classList.remove("active")); b.classList.add("active");
+ document.querySelectorAll(".view").forEach(x=>x.classList.remove("active"));
+ document.getElementById(b.dataset.view).classList.add("active"); window.scrollTo({top:0,behavior:"smooth"});
+}));
+function maps(q){location.href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q)}
+function quickMaps(){const q=document.getElementById("mapQuery").value.trim();if(q)maps(q)}
+function renderMissions(){document.getElementById("missions").innerHTML=state.missions.map((m,i)=>`<div class="card mission ${m.d?'done':''}"><input type="checkbox" ${m.d?'checked':''} onchange="toggleMission(${i})"><div>${m.t}</div></div>`).join("")}
+function toggleMission(i){state.missions[i].d=!state.missions[i].d;save();renderMissions()}
+function addMission(){const e=document.getElementById("newMission");if(!e.value.trim())return;state.missions.push({t:e.value.trim(),d:false});e.value="";save();renderMissions()}
+document.getElementById("journalText").value=state.journal||"";
+function saveJournal(){state.journal=document.getElementById("journalText").value;save();alert("Recuerdo guardado")}
+function renderPhotos(){document.getElementById("photoPreview").innerHTML=(state.photos||[]).map(x=>`<img src="${x}">`).join("")}
+document.getElementById("photoInput").addEventListener("change",e=>{
+ [...e.target.files].slice(0,6).forEach(f=>{const r=new FileReader();r.onload=()=>{state.photos.push(r.result);state.photos=state.photos.slice(-9);save();renderPhotos()};r.readAsDataURL(f)})
+});
+renderMissions();renderPhotos();
+if("serviceWorker" in navigator) navigator.serviceWorker.register("./sw.js");
+</script>
+</body></html>
