@@ -1,0 +1,22 @@
+VW340 · PORTUGAL 2026 · GUÍA REAL V2
+
+Esta versión mantiene la estructura de la app que me pasaste:
+- misma portada
+- misma barra superior
+- misma navegación inferior: Inicio / Ruta / Misiones / Bitácora / Más
+- mismas fichas, modales, mapas, bitácora, misiones, gastos, PWA y almacenamiento local
+
+QUÉ SE HA CAMBIADO
+- El contenido de las jornadas ya no sigue el planning teórico: cuenta lo que realmente fue pasando.
+- Lisboa incorpora el cambio de filosofía tras Belém/Campo de Ourique/LX Factory.
+- Óbidos y Nazaré incluyen vuestra valoración real.
+- Aveiro se centra en Beira-Mar, mercados y Artes no Canal.
+- Oporto incorpora São Bento, Gazela, Ribeira nocturna, Palácio de Cristal, Miguel Bombarda/Cedofeita, Virtudes, Dona Francesinha, Lello y Graham’s.
+- El día 17 queda preparado como Lello → Graham’s → Tendinha → Quinta do Roncão.
+- Inicio y Ruta se han actualizado para mostrar la ruta real y no el itinerario original cerrado.
+
+MUY IMPORTANTE AL SUBIRLO A GITHUB
+Esta carpeta contiene los archivos principales actualizados, pero NO sustituye la carpeta /images de tu repo anterior.
+Sube estos archivos sobre la versión existente y conserva íntegra tu carpeta /images actual.
+
+El service worker cambia de versión para forzar la actualización en el iPhone.

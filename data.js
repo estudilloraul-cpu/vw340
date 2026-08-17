@@ -129,7 +129,7 @@ window.APP_DATA={
       "id": "pasteis",
       "city": "Lisboa",
       "name": "Pastéis de Belém",
-      "tag": "Gastronomía",
+      "tag": "Sí repetiríamos",
       "img": "pasteis de belem lisbon",
       "time": "Abierto diariamente · comprobar horario",
       "price": "€",
@@ -137,12 +137,12 @@ window.APP_DATA={
       "best": "Antes de las 11:00",
       "coords": "38.6975,-9.2033",
       "address": "Rua de Belém 84–92",
-      "summary": "La pastelería histórica donde se elabora la receta asociada a Belém desde 1837.",
+      "summary": "Tópico, sí. Pero entramos enseguida, tomamos café y pastel y nos llevamos una caja. De esas paradas famosas que sí compensaron.",
       "history": "La receta se vincula a los antiguos monjes de los Jerónimos y se mantiene secreta.",
       "tips": [
-        "La cola para sentarse puede avanzar más rápido que la de compra exterior.",
-        "Canela y azúcar al gusto.",
-        "Mejor comerlos calientes."
+        "Si la cola exterior parece grande, mirad el acceso a las salas.",
+        "Tomad uno allí, caliente.",
+        "Una caja para la furgo funciona demasiado bien."
       ],
       "kids": "Puntuación familiar: textura, crema, hojaldre y presentación.",
       "food": "El propio pastel es la parada.",
@@ -154,7 +154,7 @@ window.APP_DATA={
       "id": "belem",
       "city": "Lisboa",
       "name": "Torre de Belém y Padrão",
-      "tag": "Paseo",
+      "tag": "Bonito, pero prescindible",
       "img": "belem tower lisbon portugal",
       "time": "Exteriores siempre accesibles",
       "price": "Paseo gratuito · monumentos de pago",
@@ -162,15 +162,15 @@ window.APP_DATA={
       "best": "Mañana o atardecer",
       "coords": "38.6916,-9.2160",
       "address": "Avenida Brasília",
-      "summary": "Paseo junto al Tajo entre dos grandes iconos de la expansión marítima portuguesa.",
+      "summary": "La postal de Lisboa junto al Tajo. La Torre y el Padrão son fotogénicos, pero con calor y mucha gente nos aportaron menos de lo esperado.",
       "history": "La Torre de Belém es manuelina; el Padrão dos Descobrimentos fue levantado en su forma actual en 1960.",
       "tips": [
-        "El paseo exterior ya merece la pena.",
-        "Hay poca sombra.",
-        "Usad el paso inferior para cruzar con seguridad."
+        "Id muy temprano o al final de la tarde si queréis verlo con menos gente.",
+        "No hace falta entrar en la Torre para disfrutarla.",
+        "Si el día pide otra cosa, saltarlo no arruina Lisboa."
       ],
-      "kids": "Elegid vuestra figura favorita del monumento y averiguad qué explorador representa.",
-      "food": "Pasteles, helado o picnic junto al río.",
+      "kids": "Encontrar el rinoceronte de piedra de la Torre y elegir una figura del Padrão.",
+      "food": "Pastéis de Belém fue la parada que sí funcionó: café, pastel y caja para llevar.",
       "official": "https://www.visitlisboa.com/",
       "photo": "images/real-lisboa.jpg",
       "map": "https://www.google.com/maps/search/?api=1&query=38.6916,-9.2160"
@@ -204,7 +204,7 @@ window.APP_DATA={
       "id": "lxfactory",
       "city": "Lisboa",
       "name": "LX Factory",
-      "tag": "Creatividad",
+      "tag": "Favorito del viaje",
       "img": "lx factory lisbon portugal",
       "time": "Recinto accesible a diario; negocios con horarios propios",
       "price": "Gratis",
@@ -212,15 +212,15 @@ window.APP_DATA={
       "best": "Tarde",
       "coords": "38.7037,-9.1780",
       "address": "Rua Rodrigues de Faria 103",
-      "summary": "Antiguo complejo industrial convertido en restaurantes, diseño, tiendas y cultura urbana.",
+      "summary": "Antiguo recinto industrial reconvertido en tiendas, diseño, librerías, restauración y arte urbano. Mucho postureo, sí, pero también mucha personalidad: nos encantó.",
       "history": "Ocupa instalaciones industriales del siglo XIX bajo el puente 25 de Abril.",
       "tips": [
         "Entrad en Ler Devagar.",
-        "Hay murales y detalles en cada patio.",
-        "Ideal para cenar sin mover la camper."
+        "Perdeos por los laterales y patios, no solo por la calle principal.",
+        "Mirad tiendas con criterio: hay diseño muy bueno y también bastante producto para turista."
       ],
-      "kids": "Cazad cinco letras gigantes, un mural y el objeto reciclado más creativo.",
-      "food": "Opciones variadas dentro del recinto.",
+      "kids": "Encontrar la abeja de Bordalo II, la bicicleta de Ler Devagar y elegir el mural favorito.",
+      "food": "Comimos empanadas argentinas: nada autóctono, pero funcionó.",
       "official": "https://lxfactory.com/",
       "photo": "images/real-lisboa.jpg",
       "map": "https://www.google.com/maps/search/?api=1&query=38.7037,-9.1780"
@@ -237,15 +237,15 @@ window.APP_DATA={
       "best": "Antes de las 10:30",
       "coords": "39.3609,-9.1571",
       "address": "Porta da Vila",
-      "summary": "Casas blancas con flores, callejuelas, murallas y un castillo convertido en pousada.",
+      "summary": "Villa amurallada muy bonita para una visita corta. Al final, dos horas nos parecieron suficientes: callejear, ginjinha y seguir viaje.",
       "history": "La villa fue entregada tradicionalmente como regalo de boda a varias reinas portuguesas.",
       "tips": [
-        "Aparcad fuera de las murallas.",
-        "La muralla carece de protección en algunos tramos.",
-        "Entrad por Porta da Vila y mirad sus azulejos."
+        "Mejor a última hora, cuando baja la gente.",
+        "Salid de Rua Direita y meteos por calles laterales.",
+        "No hace falta convertirlo en una visita de medio día."
       ],
       "kids": "Buscad tres escudos, cinco colores de puertas y el rincón más estrecho.",
-      "food": "Ginjinha en vasito de chocolate para adultos; dulces para las niñas.",
+      "food": "Ginjinha en vaso de chocolate para adultos; Maria acabó prefiriendo un cono de cerezas por 1 €.",
       "official": "https://turismo.obidos.pt/",
       "photo": "images/real-obidos.jpg",
       "map": "https://www.google.com/maps/search/?api=1&query=39.3609,-9.1571"
@@ -254,7 +254,7 @@ window.APP_DATA={
       "id": "nazare-sitio",
       "city": "Nazaré",
       "name": "Sítio da Nazaré y Suberco",
-      "tag": "Mirador",
+      "tag": "Turístico con matices",
       "img": "sitio nazare portugal viewpoint",
       "time": "Siempre accesible",
       "price": "Gratis",
@@ -262,12 +262,12 @@ window.APP_DATA={
       "best": "Última tarde",
       "coords": "39.6047,-9.0769",
       "address": "Largo de Nossa Senhora da Nazaré",
-      "summary": "Mirador sobre la playa y núcleo alto unido al paseo marítimo por funicular.",
+      "summary": "Las vistas son potentes, pero en agosto sentimos Nazaré demasiado orientada al turismo. Mejor quedarse con el Atlántico y el mirador que intentar “hacerlo todo”.",
       "history": "El promontorio está ligado a la leyenda de Nossa Senhora da Nazaré y al origen de la villa.",
       "tips": [
-        "El funicular evita una subida fuerte.",
-        "El viento puede ser intenso.",
-        "Combinadlo con el faro y Praia do Norte."
+        "Si hay demasiada gente, no forcéis la visita.",
+        "El Sítio merece más por la vista que por la lista de atracciones.",
+        "Para ambiente más local, seguid costa arriba o buscad pueblos pesqueros."
       ],
       "kids": "Comparad personas, barcos y edificios desde arriba para entender la escala.",
       "food": "Pescado o helado en la plaza o frente al mar.",
@@ -328,8 +328,8 @@ window.APP_DATA={
     {
       "id": "aveiro-centro",
       "city": "Aveiro",
-      "name": "Canales y centro de Aveiro",
-      "tag": "Ciudad",
+      "name": "Beira-Mar, mercados y Artes no Canal",
+      "tag": "A nuestra manera",
       "img": "aveiro canals portugal moliceiro",
       "time": "Siempre accesible",
       "price": "Paseo gratuito",
@@ -337,14 +337,14 @@ window.APP_DATA={
       "best": "Mañana",
       "coords": "40.6412,-8.6536",
       "address": "Rossio, Aveiro",
-      "summary": "Canales, arquitectura modernista, puentes y barcos moliceiros.",
+      "summary": "Aveiro nos funcionó mucho mejor cuando dejamos de pensar en atracciones: mercado, Beira-Mar, Artes no Canal y callejear sin objetivo.",
       "history": "La ciudad creció vinculada a la ría, la sal y las embarcaciones que transportaban moliço.",
       "tips": [
-        "El paseo a pie permite verlo casi todo.",
-        "El barco es opcional, no imprescindible.",
-        "Entrad en la estación para ver sus azulejos."
+        "El moliceiro es opcional, no el centro de la experiencia.",
+        "Buscad calles pequeñas de Beira-Mar.",
+        "Mirad mercados, comercios y arte urbano antes que encadenar tickets."
       ],
-      "kids": "Elegid el moliceiro con la pintura más divertida y creadle un título.",
+      "kids": "Elegir una intervención de Artes no Canal y buscar el moliceiro con la pintura más divertida.",
       "food": "Ovos moles y pescado de la ría.",
       "official": "https://www.centerofportugal.com/destination/aveiro",
       "photo": "images/real-aveiro.jpg",
@@ -387,12 +387,12 @@ window.APP_DATA={
       "best": "Tarde",
       "coords": "40.6124,-8.7498",
       "address": "Avenida José Estevão, Costa Nova",
-      "summary": "Paseo frente a antiguos palheiros pintados con rayas de colores.",
+      "summary": "Palheiros de rayas, ría y Atlántico. Dormimos en Camping Costa Nova y funcionó bien como base para bajar revoluciones antes de Aveiro.",
       "history": "Las casas fueron originalmente almacenes y refugios vinculados a pescadores y a la playa.",
       "tips": [
-        "Aparcad y recorred el paseo a pie.",
-        "No todas las casas son antiguas.",
-        "Combinad ría y océano."
+        "Combinad el paseo de las casas con la playa.",
+        "A última hora hay mejor luz y menos paseo de foto rápida.",
+        "Camping Costa Nova fue una pernocta práctica para nosotros."
       ],
       "kids": "Fotografiad una casa de cada color y diseñad vuestra propia fachada.",
       "food": "Tripas de Aveiro, helado o pescado.",
@@ -412,12 +412,12 @@ window.APP_DATA={
       "best": "Final de la tarde",
       "coords": "41.1406,-8.6110",
       "address": "Cais da Ribeira",
-      "summary": "Fachadas junto al Duero, barcos rabelos y el gran puente metálico hacia Gaia.",
+      "summary": "La vimos de noche, bajando a pie por Rua das Flores después de cenar en Gazela. Turística, sí, pero con el río, las fachadas y el puente iluminado funciona.",
       "history": "El centro histórico de Oporto es Patrimonio Mundial; el puente fue inaugurado en 1886.",
       "tips": [
-        "Cruzad por arriba y regresad por abajo si tenéis energía.",
-        "Calzado con agarre.",
-        "Evitar restaurantes demasiado captadores."
+        "Mucho mejor al anochecer que en hora punta.",
+        "No hace falta comer en primera línea.",
+        "El puente merece verse desde abajo y cruzarse otro día por el tablero superior."
       ],
       "kids": "Dibujad el puente en 60 segundos usando solo líneas rectas y curvas.",
       "food": "Francesinha, petiscos o cena en una calle interior.",
@@ -429,7 +429,7 @@ window.APP_DATA={
       "id": "saobento",
       "city": "Oporto",
       "name": "Estação de São Bento",
-      "tag": "Azulejos",
+      "tag": "Sí merece la pena",
       "img": "sao bento station porto azulejos",
       "time": "Estación en servicio",
       "price": "Gratis",
@@ -437,12 +437,12 @@ window.APP_DATA={
       "best": "Primera hora",
       "coords": "41.1456,-8.6103",
       "address": "Praça de Almeida Garrett",
-      "summary": "Vestíbulo revestido con miles de azulejos que narran episodios históricos y escenas tradicionales.",
+      "summary": "Uno de esos sitios famosos que sí nos gustó: se entra rápido, forma parte de la ciudad real y los paneles de azulejos cuentan mucho más que una simple foto.",
       "history": "El edificio actual abrió a comienzos del siglo XX sobre el antiguo convento de São Bento de Avé-Maria.",
       "tips": [
-        "No bloqueéis el paso de viajeros.",
-        "Observad escenas pequeñas, no solo el conjunto.",
-        "Combina con Sé y Rua das Flores."
+        "Entrad, mirad hacia arriba y luego acercaos a los paneles.",
+        "No necesitáis dedicarle una hora.",
+        "Desde aquí encaja muy bien bajar por Rua das Flores."
       ],
       "kids": "Buscad caballo, tren, rey, campesino y barco en los paneles.",
       "food": "Desayuno o café en los alrededores.",
@@ -479,7 +479,7 @@ window.APP_DATA={
       "id": "lello",
       "city": "Oporto",
       "name": "Livraria Lello",
-      "tag": "Librería",
+      "tag": "Turístico, pero reservado",
       "img": "livraria lello porto portugal",
       "time": "Entrada con franja · horario oficial",
       "price": "Ticket canjeable según condiciones",
@@ -487,12 +487,12 @@ window.APP_DATA={
       "best": "Primera franja",
       "coords": "41.1469,-8.6148",
       "address": "Rua das Carmelitas 144",
-      "summary": "Librería neogótica célebre por su escalera central y vidriera.",
+      "summary": "La visita más deliberadamente turística de Oporto. La hacemos con entrada de las 10:00 y una regla: disfrutar 35–45 minutos y salir antes de que condicione el resto del día.",
       "history": "Abrió en 1906 y se convirtió en uno de los interiores comerciales más fotografiados de Oporto.",
       "tips": [
-        "Reserva obligatoria recomendable.",
-        "Es pequeña y suele estar muy llena.",
-        "Entrad con un libro concreto en mente."
+        "Llegad 10–15 minutos antes.",
+        "No intentéis verla vacía: no va a pasar.",
+        "La gracia es el interior; después, volver rápido a la ciudad real."
       ],
       "kids": "Elegid la portada más bonita y buscad todos los detalles de madera que en realidad están pintados.",
       "food": "Café después en Clérigos o Cedofeita.",
@@ -537,12 +537,12 @@ window.APP_DATA={
       "best": "Atardecer",
       "coords": "41.1378,-8.6139",
       "address": "Avenida de Diogo Leite",
-      "summary": "La mejor fachada de Oporto se contempla desde la orilla de Gaia, entre rabelos y bodegas.",
+      "summary": "Gaia tiene la mejor fachada de Oporto delante y permite cambiar de perspectiva. Nuestro objetivo: cruzar el Dom Luís I por arriba y terminar en Jardim do Morro.",
       "history": "Las bodegas se instalaron en Gaia por sus condiciones de almacenamiento y su relación con el Duero.",
       "tips": [
-        "El teleférico es opcional.",
-        "Reservad bodega solo si encaja con las niñas.",
-        "El Jardim do Morro es popular al atardecer."
+        "Subid o cruzad por el tablero superior.",
+        "Jardim do Morro funciona mejor como final de paseo que como “atracción”.",
+        "Para bodegas, reservar y llegar con margen."
       ],
       "kids": "Contad barcos rabelos y elegid el cartel de bodega con mejor tipografía.",
       "food": "Picnic en Jardim do Morro o cena lejos de primera línea.",
@@ -579,23 +579,23 @@ window.APP_DATA={
       "id": "grahams",
       "city": "Oporto",
       "name": "Graham's 1890 Lodge",
-      "tag": "Bodega familiar",
+      "tag": "Reserva · 17 agosto",
       "img": "grahams port lodge porto",
-      "time": "Visitas guiadas con reserva · comprobar franjas",
+      "time": "17 agosto 2026 · visita/cata a las 12:00",
       "price": "Entrada de pago · menores según modalidad",
       "duration": "1–1 h 30 min",
-      "best": "Media tarde",
+      "best": "Llegar 15–20 min antes",
       "coords": "41.1387,-8.6255",
       "address": "Rua do Agro 141, Vila Nova de Gaia",
-      "summary": "Bodega histórica de 1890 con museo, grandes salas de barricas y vistas panorámicas sobre Oporto y el Duero. Es una opción cómoda para visitar en familia.",
+      "summary": "Visita reservada en Graham’s 1890 Lodge. Para nosotros encaja porque añade historia del vino de Oporto y una experiencia concreta, no solo otra bodega de paso.",
       "history": "Graham’s utiliza esta lodge de Gaia para criar sus vinos de Oporto. La visita recorre el museo, la bodega y la sala de botellas antes de la degustación.",
       "tips": [
-        "Reservad con antelación y confirmad la política exacta para menores.",
-        "Preguntad por alternativa sin alcohol para las niñas.",
-        "La subida hasta la bodega es pronunciada: taxi o transporte puede ahorrar esfuerzo."
+        "Llegar sobre 11:40–11:45.",
+        "En Bolt/taxi: Graham’s 1890 Lodge; acceso peatonal por Rua Rei Ramiro 514.",
+        "En coche: acceso por Rua do Agro 141."
       ],
       "kids": "Las salas de toneles y la explicación del envejecimiento son visuales. Convertid la visita en una búsqueda de tamaños, fechas y marcas de barrica.",
-      "food": "Vinum Restaurant está en el recinto y ofrece menú infantil en determinadas experiencias con reserva previa.",
+      "food": "Nuestra reserva incluye selección de quesos curados de cabra y oveja (200 g) y seis chocolates con ganache de LBV.",
       "official": "https://www.grahams-port.com/visits-tastings",
       "photo": "images/real-porto.jpg",
       "map": "https://www.google.com/maps/search/?api=1&query=41.1387,-8.6255"
@@ -690,6 +690,131 @@ window.APP_DATA={
       ],
       "kids": "Cada niña elige el pincho con el nombre o aspecto más curioso.",
       "food": "Champiñones, zapatilla, matrimonio, setas y vino de Rioja."
+    },
+    {
+      "id": "gazela",
+      "city": "Oporto",
+      "name": "Gazela",
+      "tag": "Favorito · comida",
+      "img": "gazela porto cachorrinho",
+      "time": "Comprobar horario del día",
+      "price": "€",
+      "duration": "45–60 min",
+      "best": "Cena o comida fuera de hora punta",
+      "coords": "41.1450,-8.6070",
+      "address": "Travessa Cimo de Vila, Porto",
+      "summary": "Uno de los grandes aciertos del viaje: cachorrinhos y prego, rápido, sin ceremonia y con personalidad. Nos gustó muchísimo.",
+      "history": "Casa clásica de Oporto conocida por sus cachorrinhos prensados, finos y picantes.",
+      "tips": [
+        "Si hay cola, suele moverse.",
+        "Pedid para compartir y repetid si hace falta.",
+        "Después encaja perfecto bajar por Rua das Flores hacia Ribeira."
+      ],
+      "kids": "Puntuar entre todos: pan, picante, crujiente y “¿repetiríamos?”.",
+      "food": "Cachorrinhos + prego.",
+      "official": "https://www.google.com/maps/search/?api=1&query=Gazela+Porto",
+      "photo": "images/porto-comida.webp",
+      "map": "https://www.google.com/maps/search/?api=1&query=Gazela+Porto"
+    },
+    {
+      "id": "palacio-cristal",
+      "city": "Oporto",
+      "name": "Jardins do Palácio de Cristal",
+      "tag": "Paseo",
+      "img": "palacio cristal porto gardens",
+      "time": "Acceso diurno",
+      "price": "Gratis",
+      "duration": "45–75 min",
+      "best": "Mañana o tarde",
+      "coords": "41.1483,-8.6250",
+      "address": "Rua de Dom Manuel II, Porto",
+      "summary": "Una forma mucho mejor de empezar Oporto para nosotros: verde, vistas y espacio antes de entrar en calles más densas.",
+      "history": "Los jardines ocupan la antigua zona del Palácio de Cristal y hoy son uno de los grandes espacios verdes del centro.",
+      "tips": [
+        "No intentéis recorrer cada sendero.",
+        "Buscad los balcones hacia el Duero.",
+        "Desde aquí enlazad con Miguel Bombarda."
+      ],
+      "kids": "Encontrar un pavo real y el mirador con la vista más abierta.",
+      "food": "Café después en Cedofeita/Miguel Bombarda.",
+      "official": "https://visitporto.travel/",
+      "photo": "images/porto-mirador.webp",
+      "map": "https://www.google.com/maps/search/?api=1&query=Jardins+do+Palacio+de+Cristal+Porto"
+    },
+    {
+      "id": "bombarda",
+      "city": "Oporto",
+      "name": "Miguel Bombarda y Cedofeita",
+      "tag": "Barrio · diseño",
+      "img": "miguel bombarda porto",
+      "time": "Mejor con tiendas abiertas",
+      "price": "Gratis",
+      "duration": "1–2 h",
+      "best": "Mediodía / tarde",
+      "coords": "41.1503,-8.6200",
+      "address": "Rua de Miguel Bombarda, Porto",
+      "summary": "Galerías, tiendas, pequeños comercios y una Oporto menos de postal. Es exactamente el tipo de zona que ahora buscamos.",
+      "history": "Miguel Bombarda se consolidó como eje de galerías y proyectos creativos dentro de Cedofeita.",
+      "tips": [
+        "Mirad escaparates y patios.",
+        "No hace falta seguir una ruta cerrada.",
+        "Enlazad hacia Carmo y después Virtudes."
+      ],
+      "kids": "Encontrar una pieza de street art o escaparate que merezca una foto.",
+      "food": "Buen territorio para café de especialidad y picoteo.",
+      "official": "https://visitporto.travel/",
+      "photo": "images/porto.webp",
+      "map": "https://www.google.com/maps/search/?api=1&query=Rua+Miguel+Bombarda+Porto"
+    },
+    {
+      "id": "virtudes",
+      "city": "Oporto",
+      "name": "Passeio das Virtudes",
+      "tag": "Mirador · ambiente",
+      "img": "passeio virtudes porto",
+      "time": "Siempre accesible",
+      "price": "Gratis",
+      "duration": "30–60 min",
+      "best": "Última tarde",
+      "coords": "41.1439,-8.6200",
+      "address": "Passeio das Virtudes, Porto",
+      "summary": "Más que un mirador: una pausa en la pendiente, gente sentada, vistas y sensación de ciudad vivida.",
+      "history": "El paseo se asoma sobre jardines aterrazados y el Duero desde el borde occidental del centro histórico.",
+      "tips": [
+        "Ideal para descansar.",
+        "Comprad bebida antes si os apetece sentaros.",
+        "Después podéis bajar o volver hacia Clérigos/Sé."
+      ],
+      "kids": "Elegir desde aquí el tejado, barco o fachada más pequeña que sean capaces de localizar.",
+      "food": "Picoteo informal en el entorno.",
+      "official": "https://visitporto.travel/",
+      "photo": "images/porto-mirador.webp",
+      "map": "https://www.google.com/maps/search/?api=1&query=Passeio+das+Virtudes+Porto"
+    },
+    {
+      "id": "dona-francesinha",
+      "city": "Oporto",
+      "name": "Dona Francesinha",
+      "tag": "Comida · probado",
+      "img": "francesinha porto",
+      "time": "Comprobar horario",
+      "price": "€€",
+      "duration": "1 h",
+      "best": "Comida",
+      "coords": "41.1460,-8.6150",
+      "address": "Porto",
+      "summary": "Nuestra parada para probar la francesinha en Oporto. Hecha: contundente, muy de aquí y suficiente como comida principal.",
+      "history": "La francesinha es uno de los platos más reconocibles de Oporto: pan, carnes, queso y salsa caliente.",
+      "tips": [
+        "No planifiquéis una merienda enorme después.",
+        "Compartir patatas ayuda.",
+        "Después, café bueno."
+      ],
+      "kids": "Encontrar cuántas capas distintas se ven al cortar.",
+      "food": "Francesinha.",
+      "official": "https://www.google.com/maps/search/?api=1&query=Dona+Francesinha+Porto",
+      "photo": "images/porto-comida.webp",
+      "map": "https://www.google.com/maps/search/?api=1&query=Dona+Francesinha+Porto"
     }
   ],
   "trip": [
@@ -697,14 +822,14 @@ window.APP_DATA={
       "id": "D0",
       "date": "2026-08-11",
       "city": "Lisboa",
-      "title": "Chiclana → Lisboa",
-      "meta": "547 km · etapa de llegada y comienzo real del viaje",
+      "title": "Chiclana → Lisboa · por fin en marcha",
+      "meta": "La salida llegó después de la avería del latiguillo. Portugal empezó de verdad al llegar al camping.",
       "hero": "chiclana lisbon road trip camper portugal",
       "items": [
-        "10:00 · Salida desde Chiclana",
-        "14:00 · Comida y descanso en ruta",
-        "20:00 aprox. · Llegada a Lisboa Camping",
-        "20:30 · Instalación tranquila y cena ligera"
+        "Salida desde Chiclana tras reparar la T5",
+        "Etapa larga hacia Lisboa",
+        "Llegada a Lisboa Camping",
+        "Instalar, cenar sencillo y descansar"
       ],
       "places": [],
       "photo": "images/real-lisboa.jpg",
@@ -741,25 +866,24 @@ window.APP_DATA={
           "price": "1–2 €",
           "image": "images/real-lisboa.jpg"
         }
-      }
+      },
+      "story": "El viaje empezó con más tensión mecánica de la prevista. Una vez reparado el latiguillo de freno, la prioridad fue llegar a Lisboa y empezar sin intentar recuperar el tiempo perdido.",
+      "verdict": "Primera regla del viaje: después de una etapa larga, llegar y parar también es viajar."
     },
     {
       "id": "D1",
       "date": "2026-08-12",
       "city": "Lisboa",
-      "title": "Alfama, castillo, Chiado y eclipse",
-      "meta": "Centro histórico, miradores y final del día pendiente del cielo",
+      "title": "Lisboa de arriba abajo",
+      "meta": "Graça, Alfama, tranvía, azulejos, Baixa y Chiado: Lisboa funcionó mejor cuando la recorrimos como barrio.",
       "hero": "lisbon tram alfama portugal",
       "items": [
-        "09:00 · Salida del camping",
-        "10:00 · Alfama",
-        "12:00 · Castelo de São Jorge",
-        "16:30 · Chiado y Baixa",
-        "18:00 · Regreso al entorno del camping",
-        "18:15 · Miradouro do Moinho do Penedo · preparar gafas",
-        "18:39 · Comienza el eclipse parcial",
-        "19:36 · Máximo del eclipse en Lisboa",
-        "20:29 · Final del eclipse y vuelta al camping"
+        "Subir hacia Graça / Senhora do Monte",
+        "Tranvía 28E en un tramo corto",
+        "Portas do Sol · Santa Luzia · Alfama",
+        "Sé y bajada hacia Baixa",
+        "Rossio · Chiado · cafés y callejeo",
+        "Final de tarde sin convertirlo todo en checklist"
       ],
       "places": [
         "alfama",
@@ -810,26 +934,24 @@ window.APP_DATA={
           "price": "≈ 2–4 €",
           "image": "images/real-lisboa-tram.jpg"
         }
-      }
+      },
+      "story": "El día bueno de Lisboa fue el de caminar, mirar puertas, azulejos, gatos, ropa tendida y calles. El tranvía tenía sentido como experiencia corta, no como excursión.",
+      "verdict": "Sí: barrios y callejeo. Menos necesidad de “completar” monumentos."
     },
     {
       "id": "D2",
       "date": "2026-08-13",
       "city": "Lisboa",
-      "title": "Belém, LX Factory y Óbidos al atardecer",
-      "meta": "Salida del camping, picnic en Necessidades, tarde creativa y noche en Nazaré",
+      "title": "Belém no nos atrapó. LX Factory sí.",
+      "meta": "Torre, Campo de Ourique, Pastéis, LX Factory y el momento en que cambió nuestra forma de viajar.",
       "hero": "belem lisbon portugal sunset",
       "items": [
-        "11:00 · Salida de Lisboa Camping",
-        "11:25 · Aparcar en Belém / Restelo",
-        "11:30 · Jerónimos + Pastéis",
-        "12:35 · Padrão + Torre de Belém",
-        "14:15 · Picnic en Tapada das Necessidades",
-        "15:30 · LX Factory",
-        "17:15 · Salida hacia Óbidos",
-        "18:30 · Óbidos al atardecer",
-        "20:30 · Salida hacia Nazaré",
-        "21:10 aprox. · Pernocta en Nazaré"
+        "Torre de Belém y entorno · demasiada postal y calor",
+        "Mercado de Campo de Ourique · poca cosa para lo que buscábamos",
+        "Pastéis de Belém · café + pastel + caja para llevar",
+        "LX Factory · tiendas, street art y Ler Devagar",
+        "Empanadas argentinas para comer",
+        "Óbidos al final del día · paseo y ginjinha"
       ],
       "places": [
         "jeronimos",
@@ -880,22 +1002,23 @@ window.APP_DATA={
           "image": "images/real-lisboa.jpg",
           "map": "https://www.google.com/maps/search/?api=1&query=Past%C3%A9is+de+Bel%C3%A9m"
         }
-      }
+      },
+      "story": "Llegamos a Belém con el plan clásico —Torre, Descubrimientos, Jerónimos— y nos dimos cuenta de que tanta postal, calor y vuelta de “básicos” no nos motivaba. Tocó improvisar. Campo de Ourique tampoco nos dio demasiado, pero Pastéis de Belém entró fácil y LX Factory salvó el día: antiguo recinto industrial, tiendas muy top, arte urbano y también bastante postureo. Nos encantó.",
+      "verdict": "El giro del viaje: dejar de preguntar solo “qué hay que ver” y empezar a preguntar “dónde nos apetece estar”."
     },
     {
       "id": "D4",
       "date": "2026-08-14",
       "city": "Óbidos y Nazaré",
-      "title": "Óbidos y Nazaré",
-      "meta": "Despertar ya en Nazaré, Atlántico y continuación hacia Aveiro según ritmo",
+      "title": "Óbidos → Nazaré · bonito, pero ya sabíamos lo que buscábamos",
+      "meta": "Dos paradas muy conocidas que confirmaron que preferimos lugares con más vida cotidiana.",
       "hero": "obidos nazare portugal travel",
       "items": [
-        "09:00 · Paseo breve por Óbidos / salida",
-        "10:30 · Último tramo o visita principal en Óbidos",
-        "13:30 · Comida / salida hacia Nazaré",
-        "14:30 aprox. · Llegada a Nazaré",
-        "16:00 · Sítio y faro",
-        "19:00 · Paseo marítimo"
+        "Óbidos · callejear y ginjinha",
+        "Salida hacia Nazaré",
+        "Sítio / miradores según ganas",
+        "Paseo atlántico",
+        "Seguir costa arriba buscando un ritmo más nuestro"
       ],
       "places": [
         "obidos-vila",
@@ -943,25 +1066,33 @@ window.APP_DATA={
           "price": "≈ 1,50–3 €",
           "image": "images/obidos-ginja.webp"
         }
-      }
+      },
+      "story": "Óbidos nos gustó, pero con unas dos horas tuvimos suficiente. En Nazaré la sensación turística volvió a aparecer con fuerza. El paisaje atlántico sí; convertirlo todo en atracciones, no.",
+      "verdict": "Quedarse con lo bueno y marcharse antes también forma parte del plan."
     },
     {
       "id": "D5",
       "date": "2026-08-15",
-      "city": "Aveiro",
-      "title": "Canales, sal y casas de rayas",
-      "meta": "Aveiro · salinas · Costa Nova",
+      "city": "Costa Nova · Aveiro · Oporto",
+      "title": "Costa Nova → Aveiro → Oporto",
+      "meta": "Palheiros, Beira-Mar, arte, mercados y carretera hacia el norte.",
       "hero": "aveiro costa nova portugal",
       "items": [
-        "09:00 · Salida",
-        "11:00 · Centro de Aveiro",
-        "14:30 · Salinas",
-        "17:00 · Costa Nova"
+        "Costa Nova · mañana junto a la ría y palheiros",
+        "Aveiro · Beira-Mar",
+        "Artes no Canal y callejeo",
+        "Mercados / comercios antes que atracciones",
+        "Continuación por Espinho hacia Oporto",
+        "Llegada a Oporto · São Bento",
+        "Gazela · cachorrinhos y prego",
+        "Rua das Flores → Ribeira de noche"
       ],
       "places": [
+        "costa-nova",
         "aveiro-centro",
-        "salinas",
-        "costa-nova"
+        "saobento",
+        "gazela",
+        "ribeira"
       ],
       "photo": "images/real-aveiro.jpg",
       "transport": {
@@ -1003,24 +1134,33 @@ window.APP_DATA={
           "price": "≈ 2–6 €",
           "image": "images/real-aveiro.jpg"
         }
-      }
+      },
+      "story": "Aveiro fue donde aplicamos de verdad el nuevo criterio: menos “Venecia portuguesa” y más Beira-Mar, mercados y Artes no Canal. Ya en Oporto, São Bento sí nos pareció un turístico que merece la pena. Gazela fue un flechazo; después bajamos por Rua das Flores hasta Ribeira y vimos el Dom Luís I desde abajo.",
+      "verdict": "Cuando el sitio tiene vida, comida y calle, conectamos mucho más."
     },
     {
       "id": "D6",
       "date": "2026-08-16",
       "city": "Oporto",
-      "title": "Oporto y Gaia",
-      "meta": "Ribeira, puente y primera gran tarde junto al Duero",
+      "title": "Oporto que nos apetecía: jardines, diseño y cuestas",
+      "meta": "Palácio de Cristal, Miguel Bombarda, Cedofeita, Virtudes, francesinha y el puente por arriba.",
       "hero": "porto ribeira portugal river",
       "items": [
-        "09:30 · Salida",
-        "12:00 · Llegada y transporte",
-        "13:30 · Ribeira",
-        "16:30 · Puente Dom Luís I",
-        "18:00 · Gaia"
+        "Jardins do Palácio de Cristal",
+        "Miguel Bombarda / Cedofeita",
+        "Carmo",
+        "Passeio das Virtudes",
+        "Dona Francesinha · comida",
+        "Caldeireiros / Clérigos / Sé",
+        "Ponte Dom Luís I por el tablero superior",
+        "Jardim do Morro"
       ],
       "places": [
-        "ribeira",
+        "palacio-cristal",
+        "bombarda",
+        "virtudes",
+        "dona-francesinha",
+        "clerigos",
         "gaia"
       ],
       "photo": "images/real-porto.jpg",
@@ -1065,26 +1205,30 @@ window.APP_DATA={
           "price": "≈ 2–4 €",
           "image": "images/real-porto.jpg"
         }
-      }
+      },
+      "story": "Después de la Ribeira nocturna quisimos otro Oporto: jardines, galerías, calles secundarias y miradores. Comimos en Dona Francesinha y seguimos hacia el puente. El objetivo era cruzarlo por arriba y acabar en Jardim do Morro, no acumular iglesias.",
+      "verdict": "Oporto nos está funcionando porque permite mezclar iconos con barrios y sitios donde simplemente estar."
     },
     {
       "id": "D7",
       "date": "2026-08-17",
       "city": "Oporto",
-      "title": "Graham’s → Porto Antigo → Quinta do Roncão",
-      "meta": "Bodega al mediodía, comida portuguesa y pernocta entre viñedos",
+      "title": "Lello → Graham’s → Duero",
+      "meta": "Dos reservas concretas y después volver a la T5 para salir de Oporto hacia los viñedos.",
       "hero": "porto sao bento azulejos portugal",
       "items": [
-        "12:00 · Visita y cata en Graham’s 1890 Lodge",
-        "13:45 aprox. · Porto Antigo Comida Caseira",
-        "15:30–16:00 · Salida hacia Quinta do Roncão",
-        "≈ 1 h 20 min · carretera hacia el Douro",
-        "17:00 aprox. · Llegada a Quinta do Roncão",
-        "Tarde tranquila entre viñedos",
-        "Pernocta en la Quinta"
+        "09:40 · llegar a Livraria Lello",
+        "10:00 · entrada Lello",
+        "10:40–10:45 · salir",
+        "Bolt hacia Graham’s",
+        "11:40–11:45 · llegar a recepción",
+        "12:00 · visita y cata Graham’s",
+        "Reserva: quesos curados de cabra/oveja + 6 chocolates con ganache LBV",
+        "Después · volver a Tendinha",
+        "Recoger T5 y salir hacia Quinta do Roncão"
       ],
       "places": [
-        "gaia",
+        "lello",
         "grahams"
       ],
       "photo": "images/porto-gaia.webp",
@@ -1129,14 +1273,16 @@ window.APP_DATA={
           "price": "≈ 2–4 €",
           "image": "images/real-porto.jpg"
         }
-      }
+      },
+      "story": "Hoy sí aceptamos dos lugares turísticos porque tienen un motivo concreto: Lello con hora reservada y Graham’s como experiencia del vino de Oporto. La clave es que ninguno se coma el día entero.",
+      "verdict": "Turístico no significa automáticamente malo: funciona cuando sabemos por qué vamos y cuánto tiempo queremos darle."
     },
     {
       "id": "D8",
       "date": "2026-08-18",
       "city": "Tobera y Frías",
-      "title": "Quinta do Roncão → Tobera → Frías",
-      "meta": "6 h 30 min de carretera · cascadas y tarde medieval",
+      "title": "Duero → Tobera → Frías",
+      "meta": "Viñedos al despertar, carretera y regreso a España con cascadas y piedra.",
       "hero": "Tobera waterfalls Frias Burgos camper",
       "items": [
         "08:00 · Salida de Quinta do Roncão",
@@ -1196,9 +1342,9 @@ window.APP_DATA={
     {
       "id": "D9",
       "date": "2026-08-19",
-      "city": "Burgos y Logroño",
-      "title": "Frías → Burgos → Logroño",
-      "meta": "Catedral, pinchos y última noche del viaje",
+      "city": "Frías · Logroño",
+      "title": "Frías → Logroño",
+      "meta": "Mañana medieval y última tarde de pinchos en ruta.",
       "hero": "Burgos Logrono road trip camper",
       "items": [
         "09:00 · Salida de Frías",
@@ -1261,7 +1407,7 @@ window.APP_DATA={
       "date": "2026-08-20",
       "city": "Sabadell",
       "title": "Logroño → Sabadell",
-      "meta": "4 h–4 h 15 min · regreso a casa",
+      "meta": "Últimos kilómetros y cierre del road trip.",
       "hero": "camper road trip Spain family return",
       "items": [
         "09:00 · Desayuno y salida",
@@ -1310,15 +1456,15 @@ window.APP_DATA={
     {
       "id": "lisboa",
       "name": "Lisboa",
-      "subtitle": "Luz, tranvías, azulejos y el Tajo",
+      "subtitle": "Barrios, azulejos, calle y el descubrimiento de LX Factory",
       "img": "lisbon portugal city",
-      "count": 10,
+      "count": 9,
       "photo": "images/real-lisboa.jpg"
     },
     {
       "id": "obidos",
       "name": "Óbidos",
-      "subtitle": "Murallas y calles blancas",
+      "subtitle": "Bonita en dosis pequeñas: murallas, calles y ginjinha",
       "img": "obidos portugal",
       "count": 1,
       "photo": "images/real-obidos.jpg"
@@ -1326,7 +1472,7 @@ window.APP_DATA={
     {
       "id": "nazaré",
       "name": "Nazaré",
-      "subtitle": "Atlántico y tradición marinera",
+      "subtitle": "Atlántico potente, turismo intenso",
       "img": "nazare portugal",
       "count": 3,
       "photo": "images/real-nazare.jpg"
@@ -1334,7 +1480,7 @@ window.APP_DATA={
     {
       "id": "aveiro",
       "name": "Aveiro",
-      "subtitle": "Canales, sal y color",
+      "subtitle": "Beira-Mar, mercados y arte antes que atracciones",
       "img": "aveiro portugal",
       "count": 3,
       "photo": "images/real-aveiro.jpg"
@@ -1342,9 +1488,9 @@ window.APP_DATA={
     {
       "id": "oporto",
       "name": "Oporto",
-      "subtitle": "Río, azulejos y vino",
+      "subtitle": "Gazela, diseño, cuestas, cafés, Duero y Gaia",
       "img": "porto portugal",
-      "count": 7,
+      "count": 12,
       "photo": "images/real-porto.jpg"
     },
     {
@@ -1398,5 +1544,5 @@ window.APP_DATA={
       "Busca caballo, persona y tren en los azulejos de São Bento."
     ]
   },
-  "updated": "10 de agosto de 2026 · replan Lisboa 11–13, Sintra cancelada y últimas etapas con fotos reales"
+  "updated": "2026-08-17 · guía real basada en el viaje vivido"
 };
